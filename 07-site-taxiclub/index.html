@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CabHub</title>
+	<meta name="author" content="Alim Nagoev(https://github.com/alim-nagoev)">
+	<meta name="description"
+		content="ТРАНСПОРТНАЯ КОМПАНИЯ ТАКСИ «CubHub» предлагает жителям и гостям города Нальчика пассажирские перевозки по КБР и РФ.">
+	<meta name="keywords" content="keywords,here">
+	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Russo+One&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+	<!-- Section header: -->
+	<header class="header" id="header">
+		<!-- navigation -->
+		<nav class="nav container">
+			<div class="nav__wrapper">
+				<!-- logo -->
+				<a class="logo" aria-label="CabHub">
+					Cab<span class="logo__accent">Hub</span>
+					<span class="logo__bottom">call and relax</span>
+				</a>
+				<!-- mobile burger -->
+				<div class="hamburger hamburger--elastic-r">
+					<div class="hamburger-box">
+						<button class="hamburger-inner" aria-label="Mobile burger"></button>
+					</div>
+				</div>
+				<!-- Menu -->
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Домой</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Преимущества</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Заказать</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Section main: -->
+	<main class="main" id="main">
+		<!--
+		Section promo:
+		 -->
+		<section class="promo" id="promo">
+			<b class="promo__text">Закажите прямо сейчас</b>
+			<a href="tel:88662407000" class="promo__phone" aria-label="Наши phone number">8(8662) 407-000</a>
+			<img src="images/promo/car-image.png" alt="Book Cab Now" class="promo__image">
+		</section>
+		<!--
+		Section about:
+		 -->
+		<section class="about" id="about">
+			<div class="about__inner container">
+				<div class="about__article">
+					<h2 class="about__head">
+						<span class="about__sup-head">Лучшие в городе</span>
+						Такси которому доверяют
+					</h2>
+					<p class="about__text">
+						Большой автопарк позволяет сократить до минимума время ожидания автомобиля в любой точке города.
+						Машины ежедневно проходят полный технический контроль исправного состояния. Все транспортные
+						средства проходят мойку с чисткой салона. Все таксисты в обязательном порядке проходят учебный
+						курс, который включает тренинги по знанию географии города, культурному обслуживанию пассажиров
+						и безопасному вождению.
+					</p>
+					<a href="#" class="btn about__btn">Больше</a>
+				</div>
+				<form action="#" class="form about__form">
+					<h2 class="form__head">Book a <span class="form__accent">CAB</span></h2>
+					<div class="form__inner">
+						<p class="form__row">
+							<label aria-label="Enter yНаши name" class="form__label">
+								<input type="text" name="name" class="form__input" placeholder="Имя" required>
+							</label>
+
+							<label aria-label="Enter yНаши phone" class="form__label">
+								<input type="tel" name="phone" class="form__input" placeholder="Телефон" required>
+							</label>
+
+						</p>
+						<p class="form__row">
+							<label aria-label="Enter yНаши date" class="form__label">
+								<input type="text" name="when" class="form__input" placeholder="Когда приехать">
+							</label>
+
+							<label aria-label="Enter yНаши time" class="form__label">
+								<input type="text" name="time" class="form__input" placeholder="Время">
+							</label>
+
+						</p>
+						<p class="form__row">
+							<label aria-label="Enter yНаши start" class="form__label">
+								<input type="text" name="start" class="form__input" placeholder="Начальный адрес">
+							</label>
+
+							<label aria-label="Enter yНаши end" class="form__label">
+								<input type="text" name="end" class="form__input" placeholder="Конечный адрес">
+							</label>
+
+						</p>
+						<label aria-label="Enter yНаши taxi color" class="form__label">
+							<select name="vehicle" class="form__input form__select">
+								<option>Выберите цвет</option>
+								<option value="red">Красный</option>
+								<option value="orange">Оранжевый</option>
+							</select>
+						</label>
+						<button type="submit" class="btn form__btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!--
+		Section tariffs:
+		 -->
+		<section class="tariffs container" id="tariffs">
+			<h2 class="shd tariffs__shd">
+				<span class="shd__accent">Наши</span>
+				Тарифы
+			</h2>
+			<!-- list -->
+			<ul class="tariffs__list">
+				<!-- item -->
+				<li class="tariffs__item tariffs-item">
+					<img src="images/tariff/car-image-tariff.png" alt="Economy Class" class="tariffs-item__image">
+					<h3 class="tariffs-item__name">Эконом класс</h3>
+					<p class="tariffs-item__text">
+						Идеально подойдет для людей, требующих комфортного перемещения в стандартном автомобиле до 4-х
+						человек по городу и за его пределами.
+					</p>
+					<p class="tariffs-item__price">
+						12 руб/км
+					</p>
+					<a href="#" class="btn btn--orange tariffs-item__btn" aria-label="Больше information">Больше</a>
+				</li>
+				<!-- item -->
+				<li class="tariffs__item tariffs-item tariffs-item--popular">
+					<img src="images/tariff/car-image-tariff.png" alt="Standard Class" class="tariffs-item__image">
+					<h3 class="tariffs-item__name">Стандартный</h3>
+					<p class="tariffs-item__text">
+						Идеально подойдет для людей, требующих комфортного перемещения в стандартном автомобиле до 4-х
+						человек по городу и за его пределами, включая wi-fi.
+					</p>
+					<p class="tariffs-item__price">
+						17 руб/км
+					</p>
+					<a href="#" class="btn btn--orange tariffs-item__btn" aria-label="Больше information">Больше</a>
+				</li>
+				<!-- item -->
+				<li class="tariffs__item tariffs-item">
+					<img src="images/tariff/car-image-tariff.png" alt="Business Class" class="tariffs-item__image">
+					<h3 class="tariffs-item__name">Бизнес класс</h3>
+					<p class="tariffs-item__text">
+						Идеально подойдет для людей, требующих комфортного перемещения в стандартном автомобиле до 4-х
+						человек по городу и за его пределами, включая wi-fi и массажные сиденья.
+					</p>
+					<p class="tariffs-item__price">
+						25 руб/км
+					</p>
+					<a href="#" class="btn btn--orange tariffs-item__btn" aria-label="Больше information">Больше</a>
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section features:
+		 -->
+		<section class="features" id="features">
+			<div class="container">
+				<h2 class="shd features__shd">
+					<span class="shd__accent">Наши</span>
+					Преимущества
+				</h2>
+				<!-- list -->
+				<ul class="features__list">
+					<!-- item -->
+					<li class="features__item features-item">
+						<div class="features-item__pic">
+							<img src="images/features/features-ico-1.png" alt="Home Pickup" class="features-item__icon">
+						</div>
+						<div class="features-item__content">
+							<h3 class="features-item__title">КУРЬЕРСКАЯ ДОСТАВКА</h3>
+							<p class="features-item__text">
+								Доставим любую посылку весом не более 100кг по городу.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="features__item features-item">
+						<div class="features-item__pic">
+							<img src="images/features/features-ico-2.png" alt="Bonuses for ride"
+								class="features-item__icon">
+						</div>
+						<div class="features-item__content">
+							<h3 class="features-item__title">ПЕРЕВОЗКА ЖИВОТНЫХ</h3>
+							<p class="features-item__text">
+								Перевозка животного осуществляется в специализированном контейнере. При перевозке
+								животного наличие у Заказчика подстилки и намордника у собаки .
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="features__item features-item">
+						<div class="features-item__pic">
+							<img src="images/features/features-ico-3.png" alt="Fast booking"
+								class="features-item__icon">
+						</div>
+						<div class="features-item__content">
+							<h3 class="features-item__title">ДЛЯ ПАССАЖИРОВ С ДЕТЬМИ</h3>
+							<p class="features-item__text">
+								Мы предоставляем детское кресло, бустер для пассажирова с детьми.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="features__item features-item">
+						<div class="features-item__pic">
+							<img src="images/features/features-ico-1.png" alt="GPS searching"
+								class="features-item__icon">
+						</div>
+						<div class="features-item__content">
+							<h3 class="features-item__title">АЭРОПОРТ</h3>
+							<p class="features-item__text">
+								Мы встретим Вас в аэропорту Минеральные Воды, отследим Ваш рейс.
+							</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="btn btn--orange features__btn">Больше </a>
+			</div>
+		</section>
+		<!--
+		Section testimonials:
+		 -->
+		<section class="testimonials" id="testimonials">
+			<div class="testimonials__inner container">
+				<h2 class="shd testimonials__shd">
+					<span class="shd__accent">Отзывы</span>
+					Клиентов
+				</h2>
+				<!-- list -->
+				<ul class="testimonials__list">
+					<!-- item -->
+					<li class="testimonials__item testimonials-item">
+						<p class="testimonials-item__text">
+							Заказывал 0404 такси из Нальчика в Терскол. Заказ делал через чат в What'sApp. Общение
+							оперативное, ответы полные. Водитель приехал вовремя, машина чистая. Во время поездки много
+							рассказывал о Кабардино-Балкарии. Отличный сервис, спасибо!
+						</p>
+						<div class="testimonials-item__row">
+							<img src="images/testimonials/testimonials-image.png" alt="Максим"
+								class="testimonials-item__image">
+							<div class="testimonials-item__info">
+								<h3 class="testimonials-item__name">Максим</h3>
+								<p class="testimonials-item__status">Студент</p>
+							</div>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="testimonials__item testimonials-item">
+						<p class="testimonials-item__text">
+							Здравствуйте. Четвёртый раз прилетаю в нальчик и каждый раз заказываю эту службу все
+							водители как на подбор, едешь одно удовольствие как в экскурсии очень доволен этой службой
+							два раза попадал на одного того же водителя даже номер телефона взял в следующий раз с ним
+							прокачусь . Нам бы в в столицу таких водителей. Советую всем!
+						</p>
+						<div class="testimonials-item__row">
+							<img src="images/testimonials/testimonials-image.png" alt="John Doe"
+								class="testimonials-item__image">
+							<div class="testimonials-item__info">
+								<h3 class="testimonials-item__name">Валера</h3>
+								<p class="testimonials-item__status">Менеджер</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section banner:
+		 -->
+		<section class="banner" id="banner">
+			<div class="banner__inner container">
+				<b class="banner__title">Мы работаем круглосуточно 24/7, звоните в любое время!</b>
+				<a href="tel:88662407000" class="banner__phone" aria-label="Наши phone number">8(8662) 407-000</a>
+			</div>
+		</section>
+	</main>
+	<!-- Section footer: -->
+	<footer class="footer" id="footer">
+		<!-- inner -->
+		<div class="footer__inner container">
+			<!-- column -->
+			<div class="footer__column">
+				<h3 class="footer__head">О Сab Hub</h3>
+				<p class="footer__text">
+					Сab Hub предлагает жителям и гостям города Нальчика пассажирские перевозки по КБР и РФ
+				</p>
+				<ul class="social footer__social">
+					<li class="social__item">
+						<a href="#" class="social__link" aria-label="Наши official page in Facebook"> <i
+								class="demo-icon icon-facebook"></i> </a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link" aria-label="Наши official page in Gplus"> <i
+								class="demo-icon icon-gplus"></i></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link" aria-label="Наши official page in Instagram"><i
+								class="demo-icon icon-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- column -->
+			<div class="footer__column">
+				<h3 class="footer__head">Приложение</h3>
+				<p class="footer__text">Вы можете загрузить наше официальное мобильное приложение и всегда оставаться на
+					связи</p>
+				<ul class="footer-apps">
+					<li class="footer-apps__item">
+						<a href="#" class="footer-apps__link" aria-label="Download Наши app to yНаши device">Для Андройд
+							<i class="demo-icon icon-android"></i></a>
+					</li>
+					<li class="footer-apps__item">
+						<a href="#" class="footer-apps__link" aria-label="Download Наши app to yНаши device">Для IOS<i
+								class="demo-icon icon-apple"></i></a>
+					</li>
+				</ul>
+			</div>
+			<!-- column -->
+			<div class="footer__column">
+				<h3 class="footer__head">Контакты </h3>
+				<ul class="footer-contact">
+					<li class="footer-contact__item">
+						<i class="demo-icon icon-location"></i>
+						г. Нальчик,ул. Тарчокова 50, 2-й этаж, офис 203
+					</li>
+					<li class="footer-contact__item">
+						<a href="tel:88662407000" class="footer-contact__phone" aria-label="Наши phone number"><i
+								class="demo-icon icon-mobile"></i>8(8662) 407-000</a>
+					</li>
+					<li class="footer-contact__item">
+						<a href="mailto:uspeh-407000@mail.ru" class="footer-contact__mail"
+							aria-label="Наши mail address"><i class="demo-icon icon-mail-alt"></i>
+							uspeh-407000@mail.ru</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
