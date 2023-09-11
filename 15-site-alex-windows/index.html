@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Александровский оконный завод</title>
+	<meta name="author" content="Alim Nagoev (https://github.com/nagoev-alim)">
+	<meta name="description" content="description here ">
+	<meta name="keywords" content="keywords,here">
+	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
+	<link
+		href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600%7CRubik:400&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.min.css">
+
+</head>
+
+<body>
+	<!-- Section header: -->
+	<header class="header" id="header">
+		<!-- navigation -->
+		<nav class="nav ">
+			<div class="nav__wrapper container">
+				<!-- logo -->
+				<a class="logo" aria-label="Александровский оконный завод">
+					<img src="images/logo.jpg" class="logo__ico" alt="Александровский оконный завод">
+				</a>
+				<!-- mobile burger -->
+				<div class="hamburger hamburger--elastic-r">
+					<div class="hamburger-box">
+						<button class="hamburger-inner" aria-label="Mobile burger"></button>
+					</div>
+				</div>
+				<!-- Menu -->
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#about" class="menu__link">О КОМПАНИИ</a>
+					</li>
+					<li class="menu__item">
+						<a href="#gallery" class="menu__link">ФОТО</a>
+					</li>
+					<li class="menu__item">
+						<a href="#our-video" class="menu__link">ВИДЕО</a>
+					</li>
+					<li class="menu__item">
+						<a href="#offer" class="menu__link">ПРОДУКЦИЯ</a>
+					</li>
+					<li class="menu__item">
+						<a href="#branches" class="menu__link">КОНТАКТЫ</a>
+					</li>
+					<li class="menu__item">
+						<a href="tel:+79286910287" class="menu__phone"> <img src="images/phone.png"
+								alt="Закажите обратный звонок"> 8-928-691-02-87</a>
+						<button class="call-modal menu__btn" aria-label="Закажите обратный звонок">Закажите обратный
+							звонок</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Section main: -->
+	<main class="main" id="main">
+		<!--
+		Section promo:
+		 -->
+		<section class="promo" id="promo">
+			<div class="promo__inner container">
+				<div class="promo__content">
+					<h1 class="promo__head">
+						Производство и установка металлопластиковых и алюминиевых изделий любых форм и размеров
+					</h1>
+					<form action="#" class="form promo__form">
+						<p class="form__row">
+							<label for="name" class="form__label" aria-label="Введите Ваше Имя">Имя:</label>
+							<input type="text" name="name" id="name" class="form__input" required>
+						</p>
+						<p class="form__row">
+							<label for="mail" class="form__label" aria-label="Введите Вашу Почту">Телефон:
+								<span>*</span></label>
+							<input type="email" name="mail" id="mail" class="form__input" required>
+						</p>
+						<button type="submit" class="btn form__btn">Отправить заявку</button>
+						<p class="form__conf">Мы не передаем Вашу персональную информацию третьим лицам</p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--
+		Section offer:
+		 -->
+		<section class="offer grey sc-padding" id="offer">
+			<!-- inner -->
+			<div class="offer__inner container">
+				<h2 class="head offer__head">Что мы предлагаем</h2>
+				<p class="sub-head offer__sub-head">
+					У нас огромный выбор самых различных изделий: <br>
+					Профильные системы REHAU: BLITZ, THERMO, DELIGHT, BRILLANT, INTELIO, в различных цветовых решениях
+				</p>
+				<!-- list -->
+				<ul class="offer__list grid-list">
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-1.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-2.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-3.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-4.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-5.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="offer__item offer-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/offer/offer-6.jpg" alt="Профильные системы REHAU"
+								class="offer-item__image grid-item__image">
+						</div>
+						<div class="offer-item__wrap grid-item__wrap">
+							<button class="btn offer-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</section>
+		<!--
+		Section aluminum:
+		 -->
+		<section class="aluminum grey sc-padding" id="aluminum">
+			<!-- inner -->
+			<div class="aluminum__inner container">
+				<h2 class="head aluminum__head">Алюминиевые изделия</h2>
+				<p class="sub-head aluminum__sub-head">
+					Профильные системы Alumark: S44, S50, F50, S70, C640, в различной ценовой гамме
+				</p>
+				<!-- list -->
+				<ul class="aluminum__list grid-list">
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-1.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-2.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-3.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-4.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-5.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="aluminum__item aluminum-item grid-item">
+						<div class="grid-item__img">
+							<img src="images/aluminum/aluminum-6.jpg" alt="Профильные системы REHAU"
+								class="aluminum-item__image grid-item__image">
+						</div>
+						<div class="aluminum-item__wrap grid-item__wrap">
+							<button class="btn aluminum-item__btn call-modal grid-item__btn"
+								aria-label="Рассчитать стоимость">Рассчитать</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</section>
+		<!--
+		Section our-video:
+		 -->
+		<section class="our-video container sc-padding" id="our-video">
+			<h2 class="head our-video__head">Наше видео</h2>
+			<!-- list -->
+			<ul class="our-video__list">
+				<!-- item -->
+				<li class="our-video__item">
+					<div class="video-wrapper">
+						<iframe aria-label="Видео работы" src="https://www.youtube.com/embed/ya8fxWyMWck?controls=0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<h3 class="our-video__title">Автоматические раздвижные двери</h3>
+				</li>
+				<!-- item -->
+				<li class="our-video__item">
+					<div class="video-wrapper">
+						<iframe aria-label="Видео работы" src="https://www.youtube.com/embed/ya8fxWyMWck?controls=0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<h3 class="our-video__title">Наши проекты</h3>
+				</li>
+				<!-- item -->
+				<li class="our-video__item">
+					<div class="video-wrapper">
+						<iframe aria-label="Видео работы" src="https://www.youtube.com/embed/ya8fxWyMWck?controls=0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<h3 class="our-video__title">Наше производство</h3>
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section warranty:
+		 -->
+		<section class="warranty sc-padding" id="warranty">
+			<div class="warranty__inner container">
+				<div class="warranty-column">
+					<h2 class="warranty__head warranty-border">ГАРАНТИЯ 10 ЛЕТ</h2>
+					<!-- list -->
+					<ul class="warranty__list">
+						<!-- item -->
+						<li class="warranty__item warranty-border">Скидки до 40%</li>
+						<!-- item -->
+						<li class="warranty__item warranty-border">Бесплатные замеры, доставка, установка и демонтаж
+							старых окон</li>
+						<!-- item -->
+						<li class="warranty__item warranty-border">Энергосберегающие стеклопакеты</li>
+					</ul>
+				</div>
+				<div class="warranty-column">
+					<form action="#" class="form form--grey warranty__form">
+						<h3 class="form__title">Оставьте заявку </h3>
+						<p class="form__sub-title">И ПОЛУЧИТЕ ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ В ТЕЧЕНИЕ ДНЯ</p>
+						<p class="form__row">
+							<label for="uname" class="form__label form__label--black"
+								aria-label="Введите Ваше Имя">Имя:</label>
+							<input type="text" name="name" id="uname" class="form__input" required>
+						</p>
+						<p class="form__row">
+							<label for="umail" class="form__label form__label--black"
+								aria-label="Введите Вашу Почту">Телефон:
+								<span>*</span></label>
+							<input type="email" name="mail" id="umail" class="form__input" required>
+						</p>
+						<button type="submit" class="btn form__btn">Получить консультацию</button>
+						<p class="form__conf">Мы не передаем Вашу персональную информацию третьим лицам</p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--
+		Section steps:
+		 -->
+		<section class="steps sc-padding" id="steps">
+			<!-- inner -->
+			<div class="steps__inner container">
+				<h2 class="head steps__head">Порядок работы</h2>
+				<!-- list -->
+				<ul class="steps__list">
+					<!-- item -->
+					<li class="steps__item steps-item">
+						<img src="images/steps/steps-1.png" alt="Заявка или звонок" class="steps-item__ico">
+						<h3 class="steps-item__title">Заявка или звонок</h3>
+						<p class="steps-item__text">
+							Позвоните в любой из наших офисов, или оставьте заявку на сайте и наши менеджеры свяжутся с
+							Вами
+							для консультации и предварительного просчёта изделий
+						</p>
+					</li>
+					<!-- item -->
+					<li class="steps__item steps-item">
+						<img src="images/steps/steps-2.png" alt="Расчет стоимости" class="steps-item__ico">
+						<h3 class="steps-item__title">Расчет стоимости</h3>
+						<p class="steps-item__text">
+							Бесплатный выезд замерщика в удобное для вас время, для снятия точных размеров и
+							проектирования
+							изделий
+						</p>
+					</li>
+					<!-- item -->
+					<li class="steps__item steps-item">
+						<img src="images/steps/steps-3.png" alt="Договор и оплата" class="steps-item__ico">
+						<h3 class="steps-item__title">Договор и оплата</h3>
+						<p class="steps-item__text">
+							Заключение договора на изготовление, поставку и установку изделий. Предоплата составляет
+							всего
+							10% от стоимости заказа
+						</p>
+					</li>
+					<!-- item -->
+					<li class="steps__item steps-item">
+						<img src="images/steps/steps-4.png" alt="Изготовление и доставка" class="steps-item__ico">
+						<h3 class="steps-item__title">Изготовление и доставка</h3>
+						<p class="steps-item__text">
+							Изготовление изделий в течении 3-5 дней. Бесплатная доставка, демонтаж и монтаж новых
+							изделий.
+							Оплата оставшейся суммы производится только после полной установки всех изделий
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section about:
+		 -->
+		<section class="about  sc-padding" id="about">
+			<!-- inner -->
+			<div class="about__inner container">
+				<h2 class="head about__head">О нашей компании</h2>
+				<p class="sub-head about__sub-head">6 причин выбрать именно нас</p>
+				<!-- list -->
+				<ul class="about__list">
+					<!-- item -->
+					<li class="about__item">Гарантия 10 лет и Бесплатная регулировка изделий</li>
+					<!-- item -->
+					<li class="about__item">Собственное производство стеклопакетов, москитных сеток, изделий из ПВХ и
+						Алюминиевых конструкций</li>
+					<!-- item -->
+					<li class="about__item">Профиль и комплектующие от ведущих мировых производителей</li>
+					<!-- item -->
+					<li class="about__item">Бесплатный выезд замерщика, доставка, монтаж и демонтаж изделий</li>
+					<!-- item -->
+					<li class="about__item">Профильные системы от эконом до VIP Класса.REHAU 60мм, 70мм, 90мм</li>
+					<!-- item -->
+					<li class="about__item">Мы работаем на рынке уже 20 лет</li>
+				</ul>
+			</div>
+
+		</section>
+		<!--
+		Section gallery:
+		 -->
+		<section class="gallery sc-padding" id="gallery">
+			<!-- inner -->
+			<div class="gallery__inner container">
+				<h2 class="head gallery__head">Галерея работ</h2>
+				<div class="gallery-container swiper-container">
+					<!-- list -->
+					<ul class="gallery__list swiper-wrapper">
+						<!-- item -->
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/1.jpg">
+								<img src="images/gallery/1.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/2.jpg">
+								<img src="images/gallery/2.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/3.jpg">
+								<img src="images/gallery/3.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/4.jpg">
+								<img src="images/gallery/4.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/5.jpg">
+								<img src="images/gallery/5.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/6.jpg">
+								<img src="images/gallery/6.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/7.jpg">
+								<img src="images/gallery/7.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/8.jpg">
+								<img src="images/gallery/8.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/9.jpg">
+								<img src="images/gallery/9.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/10.jpg">
+								<img src="images/gallery/10.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/11.jpg">
+								<img src="images/gallery/11.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+						<li class="swiper-slide gallery-item">
+							<a data-fslightbox="example-gallery" href="images/gallery/12.jpg">
+								<img src="images/gallery/12.jpg" alt="Наша работа" class="gallery-item__image">
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+		</section>
+		<!--
+		Section partners:
+		 -->
+		<section class="partners sc-padding" id="partners">
+			<div class="partners__inner container">
+				<h2 class="head partners__head">Наши партнеры</h2>
+				<!-- list -->
+				<ul class="partners__list">
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-1.jpg" alt="REHAU" class="partners__image">
+					</li>
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-2.png" alt="MASCO GLASS" class="partners__image">
+					</li>
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-3.jpg" alt="ROTO" class="partners__image">
+					</li>
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-4.jpg" alt="ELEMENTS" class="partners__image">
+					</li>
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-5.jpg" alt="TBM" class="partners__image">
+					</li>
+					<!-- item -->
+					<li class="partners__item">
+						<img src="images/partners/partners-6.jpg" alt="ALUMARK" class="partners__image">
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section branches:
+		 -->
+		<section class="branches sc-padding" id="branches">
+			<div class="branches__inner container">
+				<h2 class="head branches__head">Адреса наших офисов</h2>
+				<p class="branches-main head">
+					Глав офис: г. Нальчик. ул. 2-я Надречная 124 <br>
+					тел/факс: <a href="tel:+975492" class="branches__link">97-54-92</a>, <a href="tel:+974476"
+						class="branches__link">97-44-76</a> Моб:<a href="tel:+89286910287"
+						class="branches__link">8-928-691-02-87</a>
+				</p>
+				<!-- list -->
+				<ul class="branches__list">
+					<!-- item -->
+					<li class="branches__item branches-item">
+						<p class="branches-item__text">ул. Кабардинская 147</p>
+						<p class="branches-item__text">
+							<a href="tel:+772374" class="branches__link">77-23-74</a>
+						</p>
+						<p class="branches-item__text">
+							<a href="tel:+89280811961" class="branches__link">8-928-081-19-61</a>
+						</p>
+						<p class="branches-item__text">
+							<a href="tel:+89280768438" class="branches__link">8-928-076-84-38</a>
+						</p>
+					</li>
+					<!-- item -->
+					<li class="branches__item branches-item">
+						<p class="branches-item__text">ул. Головко 76</p>
+						<p class="branches-item__text">тел/факс:
+							<a href="tel:+741529" class="branches__link">74-15-29</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89386941024" class="branches__link">8-938-694-10-24</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89289150046" class="branches__link">8-928-915-00-46</a>
+						</p>
+					</li>
+					<!-- item -->
+					<li class="branches__item branches-item">
+						<p class="branches-item__text">ул. Пушкина 106</p>
+						<p class="branches-item__text">тел/факс:
+							<a href="tel:+773945" class="branches__link">77-39-45</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89386931665" class="branches__link">8-938-693-16-65</a>
+						</p>
+					</li>
+					<!-- item -->
+					<li class="branches__item branches-item">
+						<p class="branches-item__text">ул. Кулиева 48а <br> ( Дом быта "Горный" 1 этаж)</p>
+						<p class="branches-item__text">тел/факс:
+							<a href="tel:+406990" class="branches__link">40-69-90</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89287116006" class="branches__link">8-928-711-60-06</a>
+						</p>
+					</li>
+					<!-- item -->
+					<li class="branches__item branches-item">
+						<p class="branches-item__text">ул. Шогенцукого 12</p>
+						<p class="branches-item__text">тел/факс:
+							<a href="tel:+423646" class="branches__link">42-36-46</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89289126683" class="branches__link">8-928-912-66-83</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89287249151" class="branches__link">8-928-724-91-51</a>
+						</p>
+						<p class="branches-item__text">моб:
+							<a href="tel:+89287123106" class="branches__link">8-928-712-31-06</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section questions:
+		 -->
+		<section class="questions" id="questions">
+			<div class="questions__inner container">
+				<h2 class="questions__head">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+				<p class="questions__text">Звоните по номеру <a href="tel:+89286910287">8-928-691-02-87</a></p>
+				<p class="questions__or">Либо задайте их нашим менеджерам</p>
+				<button class="questions__btn call-modal" aria-label="Задать вопрос">Задать вопрос</button>
+			</div>
+		</section>
+		<!--
+		Section address:
+		 -->
+		<section class="address" id="address">
+			<h2 class="visually-hidden">Адреса наших филиалов</h2>
+			<div class="address__inner container">
+				<div class="address-content">
+					<p class="address-content__item">г. Нальчик</p>
+					<p class="address-content__item">ул. 2-я Надречная 124</p>
+					<p class="address-content__item">Тел:
+						<a href="tel:+89286910287" class="address-content__link">8-928-691-02-87</a>
+					</p>
+					<p class="address-content__item">тел/факс:
+						<a href="tel:+975492" class="address-content__link">97-54-92</a>,
+						<a href="tel:+974476" class="address-content__link">97-44-76</a>
+					</p>
+					<p class="address-content__item">почта:
+						<a href="mailto:karo-d@bk.ru" class="address-content__link">karo-d@bk.ru</a>
+					</p>
+				</div>
+			</div>
+			<div class="map">
+				<iframe aria-label="Наш адрес"
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eb5aa684f376cdaf4f428a881ff16815dd6598aa6f722ee97d802b2d424f83c&amp;source=constructor"></iframe>
+			</div>
+		</section>
+	</main>
+	<!-- Section footer: -->
+	<footer class="footer container" id="footer">
+		<!-- logo -->
+		<a class="logo footer__logo" aria-label="Александровский оконный завод">
+			<img src="images/logo.jpg" class="logo__ico" alt="Александровский оконный завод">
+		</a>
+		<p class="footer__copy">
+			ООО «Александровский оконный завод»
+			г.Нальчик, ул. 2-я Надречная 124
+			ИНН: 0726017540 ОГРН: 072601001
+			<a href="#" class="footer__conf">Политика конфиденциальности</a>
+		</p>
+		<p class="footer-contact">
+			<a href="tel:+89286910287" class="footer-contact__phone">8-928-691-02-87</a>
+			Звонок по России
+		</p>
+	</footer>
+	<!-- modal -->
+	<div class="overlay">
+		<div class="modal">
+			<button class="modal__exit">&times;</button>
+			<h3 class="modal__title">Оставить заявку</h3>
+			<form action="#" class="form modal__form">
+				<p class="form__row">
+					<label for="hname" class="form__label form__label--black" aria-label="Введите Ваше Имя">Имя:</label>
+					<input type="text" name="name" id="hname" class="form__input" required>
+				</p>
+				<p class="form__row">
+					<label for="hmail" class="form__label form__label--black" aria-label="Введите Вашу Почту">Телефон:
+						<span>*</span></label>
+					<input type="email" name="mail" id="hmail" class="form__input" required>
+				</p>
+				<button type="submit" class="btn form__btn">Отправить заявку</button>
+				<p class="form__conf">Мы не передаем Вашу персональную информацию третьим лицам</p>
+			</form>
+		</div>
+	</div>
+
+	<script src="scripts/fslightbox.js"></script>
+	<script src="scripts/swiper.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
