@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShapeUp</title>
+	<meta name="author" content="Alim Nagoev (https://github.com/nagoev-alim)">
+	<meta name="description" content="description here ">
+	<meta name="keywords" content="keywords,here">
+	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+	<!-- Section header: -->
+	<header class="header" id="header">
+		<!-- navigation -->
+		<nav class="nav">
+			<div class="nav__wrapper container">
+				<!-- logo -->
+				<a class="logo" aria-label="ShapeUp">
+					<img src="images/logo.png" alt="ShapeUp" class="logo__ico">
+					Shape<span class="red">Up</span>
+				</a>
+				<!-- mobile burger -->
+				<div class="hamburger hamburger--elastic-r">
+					<div class="hamburger-box">
+						<button class="hamburger-inner" aria-label="Mobile burger"></button>
+					</div>
+				</div>
+				<!-- Menu -->
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#header" class="menu__link">Домой</a>
+					</li>
+					<li class="menu__item">
+						<a href="#about" class="menu__link">О нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#trainers" class="menu__link">Тренера</a>
+					</li>
+					<li class="menu__item">
+						<a href="#call" class="menu__link">Услуги</a>
+					</li>
+					<li class="menu__item">
+						<a href="#testimonials" class="menu__link">Отзывы</a>
+					</li>
+					<li class="menu__item">
+						<a href="#price" class="menu__link">Цены</a>
+					</li>
+					<li class="menu__item">
+						<a href="#blog" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#contact" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Section main: -->
+	<main class="main" id="main">
+		<!--
+		Section promo:
+		 -->
+		<section class="promo" id="promo">
+			<div class="container">
+				<!-- inner -->
+				<div class="promo__inner">
+					<h1 class="promo__head">
+						<span class="blue">Построй</span> Свое Тело
+						<span class="blue">Измени</span> Свою Жизнь
+					</h1>
+					<p class="promo__text">
+						Хватит ждать! Начни менять свою жизнь к лучшему уже сегодня!
+					</p>
+					<div class="promo__links">
+						<a href="#" class="btn btn--gradient promo__btn">Начать</a>
+						<a href="#" class="btn btn--bordered promo__btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		Section about:
+		 -->
+		<section class="about container" id="about">
+			<div class="about-column">
+				<h2 class="head about__head">
+					<span class="blue head__blue">О ShapeUp</span>
+					Добро пожаловать в здоровую жизнь
+				</h2>
+				<p class="about__text">
+					Вы успешны и наслаждаетесь ритмом Москвы? Но часто чувствуете усталость, а заняться собой не хватает
+					времени? Стоит записаться в спортзал, и вы сразу получите гарантированные подарки: бодрость духа и
+					подтянутое тело! В спортивных центрах можно проводить семейные вечера и праздники.
+				</p>
+				<a href="#" class="about__more">Подробнее</a>
+			</div>
+			<div class="about-column">
+				<div class="gallery">
+					<a data-fslightbox="example-youtube-video" href="https://www.youtube.com/watch?v=3ItQBWe0WJM"
+						class="gallery-main">
+						<img src="images/about/about-3.jpg" alt="Training proccess" class="gallery-main__image">
+						<img src="images/about/play.svg" alt="Play icon" class="gallery-main__ico">
+					</a>
+					<div class="gallery-list">
+						<button class="gallery-list__item">
+							<img src="images/about/about-1.jpg" alt="Training proccess" class="gallery-list__image">
+						</button>
+						<button class="gallery-list__item">
+							<img src="images/about/about-2.jpg" alt="Training proccess" class="gallery-list__image">
+						</button>
+						<button class="gallery-list__item select">
+							<img src="images/about/about-3.jpg" alt="Training proccess" class="gallery-list__image">
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		Section trainers:
+		 -->
+		<section class="trainers container" id="trainers">
+			<h2 class="head trainers__head">
+				<span class="blue head__blue">Знакомьтесь</span>
+				Наши Тренера
+			</h2>
+			<!-- list -->
+			<ul class="trainers__list">
+				<!-- item -->
+				<li class="trainers__item trainers-item">
+					<img src="images/trainers/trainer-1.jpg" alt="Роман Ерёмин" class="trainers-item__image">
+					<div class="trainers-item__content">
+						<h3 class="trainers-item__name">Роман Ерёмин</h3>
+						<p class="trainers-item__position">Элит Тренер</p>
+					</div>
+				</li>
+				<!-- item -->
+				<li class="trainers__item trainers-item">
+					<img src="images/trainers/trainer-2.jpg" alt="Елена Махина" class="trainers-item__image">
+					<div class="trainers-item__content">
+						<h3 class="trainers-item__name">Елена Махина</h3>
+						<p class="trainers-item__position">Эксперт</p>
+					</div>
+				</li>
+				<!-- item -->
+				<li class="trainers__item trainers-item">
+					<img src="images/trainers/trainer-3.jpg" alt="Алексей Федоров" class="trainers-item__image">
+					<div class="trainers-item__content">
+						<h3 class="trainers-item__name">Алексей Федоров</h3>
+						<p class="trainers-item__position">Элит тренер</p>
+					</div>
+				</li>
+				<!-- item -->
+				<li class="trainers__item trainers-item">
+					<img src="images/trainers/trainer-4.jpg" alt="Ольга Тихонова" class="trainers-item__image">
+					<div class="trainers-item__content">
+						<h3 class="trainers-item__name">Ольга Тихонова</h3>
+						<p class="trainers-item__position">Элит тренер</p>
+					</div>
+				</li>
+				<!-- item -->
+				<li class="trainers__item trainers-item">
+					<img src="images/trainers/trainer-5.jpg" alt="Сергей Назаров" class="trainers-item__image">
+					<div class="trainers-item__content">
+						<h3 class="trainers-item__name">Сергей Назаров</h3>
+						<p class="trainers-item__position">Элит тренер</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section programs:
+		 -->
+		<section class="programs" id="programs">
+			<h2 class="head programs__head">
+				<span class="blue head__blue">Выбери</span>
+				Свою Программу
+			</h2>
+			<!-- list -->
+			<ul class="programs__list container">
+				<!-- item -->
+				<li class="programs__item programs-item">
+					<div class="programs-item__image">
+						<img src="images/programs/programs-1.png" alt="Body Building Programs"
+							class="programs-item__ico">
+					</div>
+					<h3 class="programs-item__head">Бодибилдинг</h3>
+					<p class="programs-item__text">
+						Всегда хотел стройное накаченное тело? Мы позаботимся о тебе.
+					</p>
+					<a href="#" class="btn btn--bordered programs-item__btn">Подробнее</a>
+				</li>
+				<!-- item -->
+				<li class="programs__item programs-item">
+					<div class="programs-item__image">
+						<img src="images/programs/programs-2.png" alt="Weight Loose Programs"
+							class="programs-item__ico">
+					</div>
+					<h3 class="programs-item__head">Сброс Веса</h3>
+					<p class="programs-item__text">
+						Хочешь сбросить лищний вес к лету? Тогда эта программа для тебя.
+					</p>
+					<a href="#" class="btn btn--bordered programs-item__btn">Подробнее</a>
+				</li>
+				<!-- item -->
+				<li class="programs__item programs-item">
+					<div class="programs-item__image">
+						<img src="images/programs/programs-3.png" alt="Spa Programs" class="programs-item__ico">
+					</div>
+					<h3 class="programs-item__head">СПА</h3>
+					<p class="programs-item__text">
+						Чувствуете усталость после тяжелого рабочего дня?
+						Тогда эта программа для тебя.
+					</p>
+					<a href="#" class="btn btn--bordered programs-item__btn">Подробнее</a>
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section testimonials:
+		 -->
+		<section class="testimonials" id="testimonials">
+			<div class="testimonials__inner container">
+				<h2 class="head testimonials__head">
+					<span class="blue head__blue">Отзывы</span>
+					Наших Клиентов
+				</h2>
+			</div>
+			<div class="swiper-container testimonials__swiper-container container">
+				<ul class="testimonials-slider swiper-wrapper">
+					<!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-1.png" alt="Rebecca Morrison"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Мария</h3>
+							<p class="testimonials-slide__position">Домохозяйка</p>
+							<p class="testimonials-slide__text">
+								Классный тренажерный зал! Есть все необходимое, для того чтобы прокачаться как следует.
+								Грамотные тренера, хорошие тренажеры. Очень удобное расположение.
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+							</p>
+						</div>
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-2.png" alt="Daniel Bllomberg"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Артем</h3>
+							<p class="testimonials-slide__position">Студент</p>
+							<p class="testimonials-slide__text">
+								Отличный зал, из многочисленного выбора залов на эгершельде этот самый лучший, тренажеры
+								супер, обстановка прям заряжает на отличную тренировку, персонал на высшем уровне,
+								девочки администраторы всегда улыбаются и приветливы
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star-empty"></i>
+							</p>
+						</div>
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-1.png" alt="Rebecca Morrison"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Мария</h3>
+							<p class="testimonials-slide__position">Домохозяйка</p>
+							<p class="testimonials-slide__text">
+								Классный тренажерный зал! Есть все необходимое, для того чтобы прокачаться как следует.
+								Грамотные тренера, хорошие тренажеры. Очень удобное расположение.
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+							</p>
+						</div>
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-2.png" alt="Daniel Bllomberg"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Артем</h3>
+							<p class="testimonials-slide__position">Студент</p>
+							<p class="testimonials-slide__text">
+								Отличный зал, из многочисленного выбора залов на эгершельде этот самый лучший, тренажеры
+								супер, обстановка прям заряжает на отличную тренировку, персонал на высшем уровне,
+								девочки администраторы всегда улыбаются и приветливы
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star-empty"></i>
+							</p>
+						</div>
+					</li><!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-1.png" alt="Rebecca Morrison"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Мария</h3>
+							<p class="testimonials-slide__position">Домохозяйка</p>
+							<p class="testimonials-slide__text">
+								Классный тренажерный зал! Есть все необходимое, для того чтобы прокачаться как следует.
+								Грамотные тренера, хорошие тренажеры. Очень удобное расположение.
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+							</p>
+						</div>
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide testimonials-slide">
+						<img src="images/testimonials/testimonials-img-2.png" alt="Daniel Bllomberg"
+							class="testimonials-slide__image">
+						<div class="testimonials-slide__content">
+							<h3 class="testimonials-slide__head blue">Артем</h3>
+							<p class="testimonials-slide__position">Студент</p>
+							<p class="testimonials-slide__text">
+								Отличный зал, из многочисленного выбора залов на эгершельде этот самый лучший, тренажеры
+								супер, обстановка прям заряжает на отличную тренировку, персонал на высшем уровне,
+								девочки администраторы всегда улыбаются и приветливы
+							</p>
+							<p class="testimonials-slide__raiting">
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star"></i>
+								<i class="demo-icon icon-star-empty"></i>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</section>
+		<!--
+		Section price:
+		 -->
+		<section class="price" id="price">
+			<div class="swiper-container price__swiper-container">
+				<ul class="price-slider swiper-wrapper">
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-1.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-2.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-3.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-4.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-5.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+					<!-- slide -->
+					<li class="swiper-slide price-slide">
+						<img src="images/price/price-img-6.jpg" alt="Trainers" class="price-slider__image">
+					</li>
+				</ul>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<h2 class="head price__head">
+				<span class="blue head__blue">Прайс</span>
+				Клубные Карты
+			</h2>
+			<!-- list -->
+			<ul class="price__list container">
+				<!-- item -->
+				<li class="price__item price-item">
+					<p class="price-item__cost">Р<span class="price-item__number">150</span>/День
+					</p>
+					<p class="price-item__name">Один день тренировок</p>
+					<ul class="price-item-list">
+						<li class="price-item-list__item">One day access to all clubs</li>
+						<li class="price-item-list__item">Training in group</li>
+						<li class="price-item-list__item">No Dedicated trainer</li>
+						<li class="price-item-list__item">Access to one 1 hour fitness class</li>
+						<li class="price-item-list__item">No access to spa center <br> (Book Separately)</li>
+					</ul>
+					<a href="#" class="btn btn--bordered price-item__btn">Book Now</a>
+				</li>
+				<!-- item -->
+				<li class="price__item price-item price-item--premium">
+					<p class="price-item__cost">$<span class="price-item__number">49</span>/month
+					</p>
+					<p class="price-item__name price-item__name--premium">One Year Subscription</p>
+					<ul class="price-item-list">
+						<li class="price-item-list__item">Access to all clubs</li>
+						<li class="price-item-list__item">Training in group or alone</li>
+						<li class="price-item-list__item">Dedicated trainer available</li>
+						<li class="price-item-list__item">Access to one 1 hour fitness class</li>
+						<li class="price-item-list__item">Access to spa center <br> (Book Separately)</li>
+					</ul>
+					<a href="#" class="btn btn--gradient price-item__btn">Book Now</a>
+				</li>
+				<!-- item -->
+				<li class="price__item price-item">
+					<p class="price-item__cost">$<span class="price-item__number">65</span>/month
+					</p>
+					<p class="price-item__name">One Month Sybscription</p>
+					<ul class="price-item-list">
+						<li class="price-item-list__item">Access to all clubs</li>
+						<li class="price-item-list__item">Training in group or alone</li>
+						<li class="price-item-list__item">Dedicated trainer available</li>
+						<li class="price-item-list__item">Access to one all fitness class</li>
+						<li class="price-item-list__item">Access to spa center <br> (Book Separately)</li>
+					</ul>
+					<a href="#" class="btn btn--bordered price-item__btn">Book Now</a>
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section blog:
+		 -->
+		<section class="blog" id="blog">
+			<div class="blog__inner container">
+				<h2 class="head blog__head">
+					<span class="blue head__blue">Blog</span>
+					Our Latest News
+				</h2>
+				<!-- list -->
+				<ul class="blog__list">
+					<!-- item -->
+					<li class="blog__item blog-item">
+						<img src="images/blog/news-img-1.jpg" alt="Start your push-ups today and see results"
+							class="blog-item__image">
+						<div class="blog-item__content">
+							<p class="blog-item__category">Body Fitness</p>
+							<h3 class="blog-item__title">Start your push-ups today and see results</h3>
+							<p class="blog-item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed
+								facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+							</p>
+							<a href="#" class="blog-item__more">Continue reading</a>
+							<div class="blog-item__row">
+								<p class="blog-item__info">
+									<span class="blog-item__days">1d</span>|<span class="blog-item__author">Kevin
+										Smith</span>
+								</p>
+
+
+								<button class="blog-item__like"><i class="demo-icon icon-heart"></i>25</button>
+							</div>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="blog__item blog-item">
+						<img src="images/blog/news-img-2.jpg" alt="Are you commited enough for better body ?"
+							class="blog-item__image">
+						<div class="blog-item__content">
+							<p class="blog-item__category">Exersize</p>
+							<h3 class="blog-item__title">
+								Are you commited enough
+								for better body ?
+							</h3>
+							<p class="blog-item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed
+								facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+							</p>
+							<a href="#" class="blog-item__more">Continue reading</a>
+							<div class="blog-item__row">
+								<p class="blog-item__info">
+									<span class="blog-item__days">2d</span>|<span class="blog-item__author">Md Mizanur
+										Rahman</span>
+								</p>
+								<button class="blog-item__like"><i class="demo-icon icon-heart"></i>50</button>
+							</div>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="blog__item blog-item">
+						<img src="images/blog/news-img-3.jpg" alt="Why working out is good for you ?"
+							class="blog-item__image">
+						<div class="blog-item__content">
+							<p class="blog-item__category">Fitness Club</p>
+							<h3 class="blog-item__title">Why working out is good for you ?</h3>
+							<p class="blog-item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed
+								facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+							</p>
+							<a href="#" class="blog-item__more">Continue reading</a>
+							<div class="blog-item__row">
+								<p class="blog-item__info">
+									<span class="blog-item__days">2d</span>|<span class="blog-item__author">Nazratun
+										Nayeem</span>
+								</p>
+								<button class="blog-item__like"><i class="demo-icon icon-heart"></i>71</button>
+							</div>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="blog__item blog-item">
+						<img src="images/blog/news-img-4.jpg" alt="Liftings things do make  a difference"
+							class="blog-item__image">
+						<div class="blog-item__content">
+							<p class="blog-item__category">Training Equipments</p>
+							<h3 class="blog-item__title">Liftings things do make a difference</h3>
+							<p class="blog-item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed
+								facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+							</p>
+							<a href="#" class="blog-item__more">Continue reading</a>
+							<div class="blog-item__row">
+								<p class="blog-item__info">
+									<span class="blog-item__days">3d</span>|<span class="blog-item__author">Marry
+										Poppins</span>
+								</p>
+								<button class="blog-item__like"><i class="demo-icon icon-heart"></i>39</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section call:
+		 -->
+		<section class="call" id="call">
+			<!-- inner -->
+			<div class="call__inner container">
+				<h2 class="head blog__head">
+					<span class="blue head__blue">Call Us Today</span>
+					<a href="tel:+19576521268" class="head__link">+1 957 652 1268</a>
+				</h2>
+				<p class="call__text">
+					Praesent elementum nulla non posuere dictum. Suspendisse aliquet quam
+					diam, egestas tristique nibh tempor sed. Ut justo leo, eleifend sit amet ipsum ac,
+					scelerisque mattis nisl.
+				</p>
+				<a href="#" class="btn btn--gradient call__btn">Book a Program</a>
+			</div>
+		</section>
+		<!--
+		Section contact:
+		 -->
+		<section class="contact container" id="contact">
+			<div class="contact-column">
+				<a class="logo contact__logo" aria-label="ShapeUp">
+					<img src="images/logo.png" alt="ShapeUp" class="logo__ico">
+					Shape<span class="red">Up</span>
+				</a>
+				<p class="contact__text">
+					Maecenas rhoncus ipsum non nisi finibus maximus. In hac habitasse platea dictumst. Aenean purus
+					eros.
+				</p>
+				<h3 class="contact__head">Follow Us</h3>
+				<ul class="contact-social">
+					<li class="contact-social__item">
+						<a href="#" class="contact-social__link" aria-label="Our official page in facebook">
+							<i class="demo-icon icon-facebook"></i>
+
+						</a>
+					</li>
+					<li class="contact-social__item">
+						<a href="#" class="contact-social__link" aria-label="Our official page in twitter">
+							<i class="demo-icon icon-twitter"></i>
+						</a>
+					</li>
+					<li class="contact-social__item">
+						<a href="#" class="contact-social__link" aria-label="Our official page in instagram">
+							<i class="demo-icon icon-instagram"></i>
+						</a>
+					</li>
+					<li class="contact-social__item">
+						<a href="#" class="contact-social__link" aria-label="Our official page in youtube">
+							<i class="demo-icon icon-youtube-play"></i>
+						</a>
+					</li>
+					<li class="contact-social__item">
+						<a href="#" class="contact-social__link" aria-label="Our official page in vimeo">
+							<i class="demo-icon icon-vimeo"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contact-column">
+
+				<h3 class="contact__title">Quick Contacts</h3>
+				<ul class="contact-list">
+					<li class="contact-list__item">
+						<i class="demo-icon icon-location"></i>
+						23, George Washington Street,
+						New York, USA, 09567
+					</li>
+					<li class="contact-list__item">
+						<a href="tel:+19576521268" class="contact-list__link">
+							<i class="demo-icon icon-mobile"></i>
+							+1 957 652 1268</a>
+					</li>
+					<li class="contact-list__item">
+						<a href="mailto:info@shapeup.com" class="contact-list__link">
+							<i class="demo-icon icon-mail-alt"></i>
+							info@shapeup.com</a>
+					</li>
+					<li class="contact-list__item">
+						<a href="https://www.shapeup.com" class="contact-list__link" target="_blank"
+							rel="noopener noreferrer">
+							<i class="demo-icon icon-globe"></i>
+							www.shapeup.com</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contact-column">
+				<h3 class="contact__title">Popular Search Tags</h3>
+				<ul class="contact-tags">
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Workout</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Spa</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Schedule</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Weightlifing</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Boxing</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Yoga</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Location</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Trainers</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Class</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Equipments</a>
+					</li>
+					<li class="contact-tags__item">
+						<a href="#" class="contact-tags__link">Nutrition</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- Section footer: -->
+	<footer class="footer" id="footer">
+		<nav class="footer-nav">
+			<ul class="footer-menu">
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Home</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">About</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Trainers</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Service</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Reviews</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Price</a>
+				</li>
+				<li class="footer-menu__item">
+					<a href="#" class="footer-menu__link">Blog</a>
+				</li>
+			</ul>
+		</nav>
+		<p class="footer-copy">Copyright 2019. All Rights Reserved</p>
+	</footer>
+
+
+	<script src="scripts/fslightbox.js"></script>
+	<script src="scripts/swiper.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
