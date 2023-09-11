@@ -1,0 +1,62 @@
+@import "../../scss/mixins/fluid-types";
+
+.blog {
+  padding-top: #{fluid(48px, 96px)};
+  padding-bottom: #{fluid(48px, 96px)};
+  background-color: #FAF5EF;
+
+  :global {
+    .blog {
+      &__top {
+        text-align: center;
+        margin-bottom: #{fluid(35px, 70px)};
+
+        .title {
+          display: inline-block;
+        }
+      }
+
+      &__list {
+        display: grid;
+        gap: 30px;
+        margin-bottom: #{fluid(28px, 48px)};
+        @media (min-width: 576px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        &-item {
+          &:nth-child(1),
+          &:nth-child(3) {
+            img {
+              max-height: 301px;
+              height: 100%;
+            }
+          }
+        }
+
+        &-img {
+          margin-bottom: 16px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        &-category {
+          margin-bottom: 5px;
+        }
+
+        &-title {
+          font-size: #{fluid(16px, 22px)};
+          line-height: 32px; /* 145.455% */
+        }
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

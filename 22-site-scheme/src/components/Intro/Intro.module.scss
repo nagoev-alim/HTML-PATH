@@ -1,0 +1,72 @@
+@import "../../scss/mixins/fluid-types";
+
+.intro {
+  background-color: #FAF5EF;
+  padding-top: #{fluid(100px, 137px)};
+  padding-bottom: #{fluid(65px, 130px)};
+
+  :global {
+    .intro {
+      &__container {
+        display: grid;
+        gap: 40px;
+
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(2, auto);
+          gap: #{fluid(40px, 128px, 768px, 1190px)}
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: 472px 1fr;
+        }
+      }
+
+      &__right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        max-width: max-content;
+        margin-inline: auto;
+        @media (min-width: 1200px) {
+          max-width: 740px;
+          width: 100%;
+          .intro__img-1, .intro__img-2 {
+            position: absolute;
+            width: 270px;
+          }
+          .intro__img-1 {
+            left: 0;
+            bottom: -180px;
+          }
+          .intro__img-2 {
+            right: 0;
+            top: 20px;
+          }
+        }
+      }
+
+      &__title {
+        font-size: #{fluid(30px, 60px)};
+        line-height: #{fluid(35px, 70px)};
+        letter-spacing: -1.2px;
+        margin-bottom: 22px;
+      }
+
+      &__text {
+        font-size: #{fluid(14px, 18px)};
+        margin-bottom: 38px;
+      }
+
+      &__btns {
+        display: grid;
+        gap: 28px;
+        width: 100%;
+        @media (min-width: 576px) {
+          max-width: max-content;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+
+}

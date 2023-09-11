@@ -1,0 +1,68 @@
+@import "../../scss/mixins/fluid-types";
+
+.services {
+  padding-bottom: #{fluid(75px, 150px)};
+
+  :global {
+    .services {
+      &__sub {
+        margin-bottom: #{fluid(35px, 70px)};
+      }
+
+      &__list {
+        display: grid;
+        gap: 30px;
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      &__item {
+        padding: #{fluid(28px, 38px)} 28px;
+        transition: box-shadow .3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.07);
+
+          .services__item-ico {
+            background-color: #FE7E41;
+          }
+
+          svg {
+            path {
+              transition: fill .3s ease-in-out;
+              fill: #ffffff;
+            }
+          }
+        }
+
+        &-ico {
+          width: 86px;
+          height: 86px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: #{fluid(16px, 36px)};
+          transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out;
+          box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.07);
+        }
+
+        &-title {
+          color: #140A05;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 32px; /* 145.455% */
+          margin-bottom: 14px;
+        }
+        &-text {
+          font-size: 14px;
+          line-height: 26px; /* 185.714% */
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,90 @@
+@import "../../scss/mixins/fluid-types";
+
+.review {
+  padding-top: #{fluid(75px, 150px)};
+  padding-bottom: #{fluid(75px, 150px)};
+
+  :global {
+
+    .review {
+      &__row {
+        display: grid;
+        gap: 30px;
+        grid-column: #{fluid(30px, 130px)};
+        @media (min-width: 768px) {
+          align-items: center;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        img {
+          margin-inline: auto;
+        }
+      }
+
+      &__quote {
+        display: block;
+        color: #140A05;
+        font-size: #{fluid(16px, 28px)};
+        font-style: italic;
+        font-weight: 500;
+        line-height: 38px; /* 135.714% */
+        margin-bottom: #{fluid(25px, 55px)};
+      }
+
+      &__author {
+        color: #140A05;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px; /* 175% */
+      }
+
+      &__position {
+        font-size: 14px;
+        line-height: 26px; /* 185.714% */
+      }
+
+      &__navigation {
+        max-width: 104px;
+        width: 100%;
+        gap: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        @media (min-width: 768px) {
+          bottom: 80px;
+        }
+        @media (min-width: 992px) {
+          bottom: 100px;
+        }
+
+        &-btn {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #6D6460;
+          color: #6D6460;
+          background: transparent;
+          transition: background-color .3s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover, &:focus {
+            background-color: #FE7E41;
+            border-color: #FE7E41;
+            color: #fff;
+          }
+        }
+      }
+
+      &__container {
+        position: relative;
+      }
+
+
+    }
+
+  }
+}
