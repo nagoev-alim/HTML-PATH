@@ -1,0 +1,247 @@
+<!-- 
+	AUTHOR: ALIM NAGOEV (https://github.com/GaetanoMosca)
+	NAME: SEDONA (https://htmlacademy.ru/)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--  1.DOCUMENT FAVICONS 	
+	====================-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!--  2.DOCUMENT FONTS
+	====================-->
+	<!--  3.DOCUMENT LIBS
+	====================-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<!--  4.DOCUMENT CUSTOM STYLES
+	====================-->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- 5.DOCUMENT TITLE
+==================== -->
+	<title>SEDONA - HOTELS</title>
+</head>
+<!-- 6.DOCUMENT BODY START
+==================== -->
+<body class="apartment_body">
+	<header class="header" id="header">
+		<div class="cnt">
+			<nav class="header_nav">
+				<div class="header_logo">
+					<img src="images/logo.png" alt="Page Logo">
+				</div>
+				<!-- end header_logo-->
+				<div class="header_bar">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- end header_bar-->
+				<ul class="header_menu">
+					<a href="index.html">ИНФОРМАЦИЯ</a>
+					<a href="index.html">ФОТО И ВИДЕО</a>
+					<a href="index.html">КАРТА ШТАТА</a>
+					<a class="current">ГОСТИНИЦЫ</a>
+				</ul>
+				<!-- end header_menu-->
+			</nav>
+			<!-- end header_nav-->
+		</div>
+		<!-- end cnt-->
+	</header>
+	<!-- end header-->
+
+	<section class="apartment" id="apartment">
+		<div class="cnt">
+			<div class="apartment_filter">
+				<form action="#">
+					<fieldset>
+						<legend>ИНФРАСТРУКТУРА:</legend>
+						<div class="field">
+							<input type="checkbox" name="" id="pool">
+							<label for="pool">БАССЕЙН</label>
+						</div>
+						<div class="field">
+							<input type="checkbox" name="" id="parking">
+							<label for="parking">ПАРКОВКА</label>
+						</div>
+						<div class="field">
+							<input type="checkbox" name="" id="wifi">
+							<label for="wifi">Wi-Fi</label>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<div class="field">
+							<input type="checkbox" name="" id="hotel" checked>
+							<label for="hotel">ГостиницА</label>
+						</div>
+						<div class="field">
+							<input type="checkbox" name="" id="motel" checked>
+							<label for="motel">МОТЕЛЬ</label>
+						</div>
+						<div class="field">
+							<input type="checkbox" name="" id="apartments" checked>
+							<label for="apartments">АПАРТАМЕНТЫ</label>
+						</div>
+					</fieldset>
+					<fieldset class="form_slider">
+						<legend>Стоимость в сутки (Р):</legend>
+						<div class="range_in">
+							<div class="range_item">
+								<label for="amount_min">от</label>
+								<input type="text" id="amount_min">
+							</div>
+							<div class="range_item">
+								<label for="amount_max">до</label>
+								<input type="text" id="amount_max">
+							</div>
+						</div>
+						<div id="slider-range"></div>
+						<button class="btn_show">Показать</button>
+					</fieldset>
+				</form>
+			</div>
+			<!-- end #apartment_filter -->
+			<div class="apartment_sort">
+				<div class="sort_result">Найдено:
+					<span>3</span>
+				</div>
+				<div class="sort_filter">
+					<span>СОРТИРОВКА:</span>
+					<ul>
+						<a href="#" class="current">ПО ЦЕНЕ</a>
+						<a href="#">ПО ТИПУ</a>
+						<a href="#">ПО РЕЙТИНГУ</a>
+					</ul>
+				</div>
+				<div class="sort_type">
+					<a href="#" class="triangle_up"></a>
+					<a href="#" class="triangle_down"></a>
+				</div>
+			</div>
+			<!-- end #apartment_sort -->
+			<div class="apartment_list">
+				<div class="apartment_item">
+					<img src="images/room-img-1.png" alt="">
+					<div class="item_desc">
+						<a href="#" class="item_name">Amara Resort & Spa</a>
+						<p>
+							<span>Гостиница</span>
+							<span>ОТ 4000 Р.</span>
+						</p>
+						<div class="item_control">
+							<a href="#" class="button">ПОДРОБНЕЕ</a>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="item_rating">
+						<ul class="rating_starts">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+						</ul>
+						<div class="rating_count">Рейтинг: 8,5</div>
+					</div>
+				</div>
+				<!-- end #apartment_item -->
+				<div class="apartment_item">
+					<img src="images/room-img-2.png" alt="">
+					<div class="item_desc">
+						<a href="#" class="item_name">Desert Quail Inn</a>
+						<p>
+							<span>Мотель</span>
+							<span>ОТ 3000 Р.</span>
+						</p>
+						<div class="item_control">
+							<a href="#" class="button">ПОДРОБНЕЕ</a>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="item_rating">
+						<ul class="rating_starts">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+						</ul>
+						<div class="rating_count">Рейтинг: 8,9</div>
+					</div>
+				</div>
+				<!-- end #apartment_item -->
+				<div class="apartment_item">
+					<img src="images/room-img-3.png" alt="">
+					<div class="item_desc">
+						<a href="#" class="item_name">Villas at Poco Diablo</a>
+						<p>
+							<span>Апартаменты</span>
+							<span>ОТ 2000 Р.</span>
+						</p>
+						<div class="item_control">
+							<a href="#" class="button">ПОДРОБНЕЕ</a>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="item_rating">
+						<ul class="rating_starts">
+							<img src="images/star-ico.png" alt="">
+							<img src="images/star-ico.png" alt="">
+						</ul>
+						<div class="rating_count">Рейтинг: 9,2 </div>
+					</div>
+				</div>
+				<!-- end #apartment_item -->
+			</div>
+			<!-- end #apartment_list -->
+		</div>
+		<!-- end #cnt -->
+	</section>
+	<!-- end #apartment -->
+	<footer class="footer" id="footer">
+		<div class="cnt">
+			<div class="footer_item">
+				#visitSEDONA
+			</div>
+			<!-- end #footer_item -->
+			<div class="footer_item">
+				<ul>
+					<a href="#" aria-label="tw">
+						<img src="images/tw.png" alt="tw">
+					</a>
+					<a href="#" aria-label="fb">
+						<img src="images/fb-icon.png" alt="fb">
+					</a>
+					<a href="#" aria-label="youtube">
+						<img src="images/youtube.png" alt="youtube">
+					</a>
+				</ul>
+			</div>
+			<!-- end #footer_item -->
+			<div class="footer_item">
+				WEBSITE by
+				<a href="#">
+					<img src="images/logo_name.png" alt="">
+				</a>
+			</div>
+			<!-- end #footer_item -->
+		</div>
+		<!-- end cnt-->
+	</footer>
+	<!-- end footer-->
+
+	<!-- DOCUMENT SCRIPTS 
+==================== -->
+	<script src="libs/vendor/libs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- DOCUMENT SCRIPTS CUSTOM
+==================== -->
+	<script src="libs/common.js"></script>
+</body>
+<!-- DOCUMENT BODY END
+==================== -->
+</html>
