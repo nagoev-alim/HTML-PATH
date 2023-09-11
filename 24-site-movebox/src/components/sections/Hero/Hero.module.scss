@@ -1,0 +1,263 @@
+@import "../../../scss/mixins/fluid-types";
+
+.hero {
+  background-color: #198F86;
+  color: #fff;
+  padding-top: clamped(28px, 38px);
+  padding-bottom: clamped(28px, 48px);
+
+  :global {
+    .hero {
+      &__wrap {
+        display: grid;
+        gap: 22px;
+        margin-bottom: 30px;
+        max-width: 782px;
+      }
+
+      &__title {
+        font-size: clamped(24px, 54px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 118.519%;
+      }
+
+      &__row {
+        display: grid;
+        gap: 20px;
+        @media (min-width: 768px) {
+          grid-template-columns: 338px 1fr;
+          align-items: center;
+          column-gap: clamped(44px, 104px, 768px, 1190px);
+        }
+      }
+
+      &__column {
+        &--right {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          column-gap: 28px;
+          align-items: center;
+          max-width: 728px;
+        }
+      }
+
+      &__auth {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 16px;
+        max-width: 338px;
+
+        &-btn {
+          padding: clamped(10px, 19px);
+          gap: 19px;
+          background-color: #fff;
+          border-radius: 4px;
+          width: 100%;
+          justify-content: flex-start;
+          color: #566766;
+          font-size: clamped(14px, 18px);
+          font-weight: 500;
+          line-height: 155.556%;
+
+          &--message {
+            border-radius: 4px;
+            border: 1px solid #72BAB5;
+            background: #309A92;
+            color: #FFFFFF;
+          }
+        }
+
+        &-ico {
+          width: 28px;
+          height: 28px;
+        }
+
+        &-text {
+          color: #CEE8E6;
+          font-size: clamped(14px, 18px);
+          font-weight: 500;
+          line-height: 155.556%;
+          margin-bottom: 28px;
+        }
+
+        &-link {
+          color: #FF8F00;
+        }
+      }
+
+      &__trial {
+        p:last-child {
+          color: #CEE8E6;
+        }
+      }
+    }
+
+    .header {
+      margin-bottom: 60px;
+
+      &__nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+      }
+
+      &__wrap {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #309A92;
+        padding: 30px;
+        gap: 20px;
+        place-content: center;
+        text-align: center;
+        min-height: 500px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        @media (min-width: 768px) {
+          min-height: auto;
+          box-shadow: unset;
+          gap: 0;
+          text-align: left;
+          padding: 0;
+          display: flex;
+          position: static;
+          background-color: transparent;
+        }
+      }
+
+      &__menu {
+
+        @media (min-width: 768px) {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          max-width: 500px;
+          gap: 40px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &-link {
+          display: block;
+          padding: 10px;
+          font-size: 18px;
+          transition: color 0.3s ease-in-out;
+          @media (min-width: 768px) {
+            padding: 0;
+            font-size: 16px;
+          }
+
+          &:hover, &:focus {
+            color: #041615;
+          }
+        }
+      }
+
+      .hamburger {
+        font: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        margin: 0;
+        cursor: pointer;
+        transition-timing-function: linear;
+        transition-duration: .15s;
+        transition-property: opacity, filter;
+        text-transform: none;
+        color: inherit;
+        border: 0;
+        background-color: transparent;
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+
+      .hamburger.is-active:hover, .hamburger:hover {
+        opacity: .7
+      }
+
+      .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+        background-color: #000
+      }
+
+      .hamburger-box {
+        position: relative;
+        display: inline-block;
+        width: 35px;
+        height: 24px
+      }
+
+      .hamburger-inner {
+        top: 50%;
+        display: block;
+        margin-top: -2px
+      }
+
+      .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        background-color: #fff
+      }
+
+      .hamburger-inner:after, .hamburger-inner:before {
+        display: block;
+        content: ""
+      }
+
+      .hamburger-inner:before {
+        top: -10px
+      }
+
+      .hamburger-inner:after {
+        bottom: -10px
+      }
+
+      .hamburger--squeeze .hamburger-inner {
+        transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+        transition-duration: 75ms
+      }
+
+      .hamburger--squeeze .hamburger-inner:before {
+        transition: top 75ms ease .12s, opacity 75ms ease
+      }
+
+      .hamburger--squeeze .hamburger-inner:after {
+        transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(.55, .055, .675, .19)
+      }
+
+      .hamburger--squeeze.is-active .hamburger-inner {
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+        transform: rotate(45deg)
+      }
+
+      .hamburger--squeeze.is-active .hamburger-inner:before {
+        top: 0;
+        transition: top 75ms ease, opacity 75ms ease .12s;
+        opacity: 0;
+      }
+
+      .hamburger--squeeze.is-active .hamburger-inner:after {
+        bottom: 0;
+        transition: bottom 75ms ease, transform 75ms cubic-bezier(.215, .61, .355, 1) .12s;
+        transform: rotate(-90deg)
+      }
+
+      .hamburger--squeeze.is-active .hamburger-inner:before,
+      .hamburger--squeeze.is-active .hamburger-inner:after {
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}

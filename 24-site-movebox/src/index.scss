@@ -1,0 +1,159 @@
+@import "scss/mixins/fluid-types";
+
+/* 🌴 Settings */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn, .button, button {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* 🌴 Variables */
+
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+}
+
+/* 🌴 Base */
+
+html, body {
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-size: clamped(14px, 16px);
+  font-weight: 400;
+  color: #566766;
+  line-height: 26px; /* 162.5% */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root,
+#app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin-inline: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  border-radius: 7px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  padding: clamped(10px, 13px) clamped(13px, 31px);
+
+  &--primary {
+    background: #198F86;
+    color: #FFF;
+
+    &:hover, &:focus {
+      background: #CDE7E5;
+      color: #041615;
+    }
+  }
+
+  &--secondary {
+    background: #CDE7E5;
+    color: #041615;
+
+    &:hover, &:focus {
+      background: #198F86;
+      color: #FFF;
+    }
+  }
+
+  &--third {
+    border-color: #72BAB5;
+    background: #309A92;
+    color: #FFF;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    &:hover, &:focus {
+      background: #CDE7E5;
+      border-color: #CDE7E5;
+      color: #041615;
+    }
+  }
+}
+
+.title {
+  font-size: clamped(24px, 44px);
+  font-weight: 700;
+  line-height: 122.727%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

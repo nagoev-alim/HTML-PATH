@@ -1,0 +1,44 @@
+@import "../../../scss/mixins/fluid-types";
+
+.company {
+  background-color: #041615;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: clamped(45px, 90px);
+  padding-bottom: 45px;
+
+  :global {
+    .company {
+      &__title {
+        margin-bottom: clamped(35px, 71px);
+      }
+
+      &__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: clamped(20px, 70px);
+        padding-right: clamped(20px, 70px);
+        @media (min-width: 576px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: clamped(15px, 35px) clamped(15px, 31px);
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover, &:focus {
+          background-color: #0A3432;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,119 @@
+@import "../../../scss/mixins/fluid-types";
+
+.review {
+  padding-top: clamped(75px, 150px);
+  padding-bottom: clamped(42px, 85px);
+
+
+  :global {
+    .review {
+      &__container {
+        position: relative;
+      }
+
+      &__navigation {
+        display: none;
+        @media (min-width: 768px) {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          z-index: 10;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        &-btn {
+          width: 54px;
+          height: 54px;
+          border-radius: 50%;
+          background-color: #198F86;
+          color: #fff;
+          transition: background-color 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #CDE7E5;
+            color: #041615;
+          }
+        }
+      }
+
+      &__slider {
+        padding-bottom: 65px;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+
+        .swiper-pagination {
+          display: none;
+          @media (min-width: 768px) {
+            bottom: 90px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .swiper-pagination-bullet {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #CED9D8;
+          transition: background-color 0.3s ease-in-out;
+          opacity: 1;
+
+          &:hover {
+            background-color: #041615;
+          }
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: #041615;
+        }
+      }
+
+      &__slide {
+        display: grid;
+        gap: 30px;
+
+        @media (min-width: 768px) {
+          background: #FFF;
+          box-shadow: 0px 26px 52px 0px rgba(0, 0, 0, 0.05);
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          padding: 30px clamped(30px, 117px, 768px, 1190px) 81px 30px;
+        }
+
+        &-avatar {
+          margin-inline: auto;
+        }
+
+        &-content {
+
+        }
+
+        &-company {
+          margin-bottom: 28px;
+        }
+
+        &-title {
+          color: #041615;
+          font-size: clamped(16px, 18px);
+          font-weight: 500;
+          line-height: 144.444%;
+          margin-bottom: 18px;
+        }
+
+        &-text {
+          margin-bottom: 26px;
+        }
+
+        &-author {
+          color: #041615;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

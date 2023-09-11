@@ -1,0 +1,115 @@
+@import "../../../scss/mixins/fluid-types";
+
+.footer {
+  background-color: #041615;
+  padding-top: clamped(45px, 90px);
+  padding-bottom: 45px;
+  color: #9EACAB;
+
+  :global {
+    .footer {
+      &__top {
+        border-bottom: 1px solid #3A4645;
+        margin-bottom: 28px;
+        display: grid;
+        gap: clamped(10px, 30px);
+        padding-bottom: 45px;
+        @media (min-width: 1200px) {
+          grid-template-columns: 233px 1fr;
+          gap: 145px;
+          align-items: flex-start;
+        }
+      }
+
+      &__about {
+        display: grid;
+        gap: 22px;
+        align-items: flex-start;
+      }
+
+      &__row {
+        display: grid;
+        gap: clamped(10px, 30px);
+        @media (min-width: 576px) {
+          grid-template-columns: repeat(2, 1fr);
+          align-items: flex-start;
+        }
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      &__column {
+        display: grid;
+        gap: clamped(10px, 28px);
+      }
+
+      &__menu {
+        display: grid;
+        gap: 16px;
+
+        &-link {
+          transition: color 0.3s ease-in-out;
+
+          &:hover, &:focus {
+            color: #fff;
+          }
+        }
+      }
+
+      &__title {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      &__bottom {
+        display: grid;
+        gap: clamped(10px, 28px);
+        justify-items: center;
+        @media (min-width: 992px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      &__links {
+        display: flex;
+        gap: 10px;
+
+        &-item {
+          transition: color 0.3s ease-in-out;
+
+          &:hover, &:focus {
+            color: #fff;
+          }
+        }
+      }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 150px;
+        width: 100%;
+        gap: 12px;
+
+        &-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          width: 42px;
+          height: 42px;
+          background-color: #198F86;
+          color: #fff;
+          transition: background-color 0.3s ease-in-out;
+
+          &:hover, &:focus {
+            background-color: #0D6E66;
+          }
+        }
+      }
+    }
+  }
+}

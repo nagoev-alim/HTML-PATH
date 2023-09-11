@@ -1,0 +1,65 @@
+@import "../../../scss/mixins/fluid-types";
+
+.inbox {
+  padding-top: clamped(45px, 90px);
+  padding-bottom: clamped(45px, 90px);
+  background-color: #198F86;
+  text-align: center;
+  color: #FFF;
+
+  :global {
+    .inbox {
+      &__container {
+        max-width: 645px;
+      }
+
+      &__title {
+        margin-inline: auto;
+        font-size: clamped(24px, 44px);
+        font-weight: 700;
+        line-height: 122.727%; /*  */
+        margin-bottom: 18px;
+      }
+
+      &__text {
+        margin-bottom: clamped(35px, 55px);
+      }
+
+      &__auth {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 16px;
+        max-width: 338px;
+        margin-inline: auto;
+
+        &-btn {
+          padding: clamped(10px, 19px);
+          gap: 19px;
+          background-color: #fff;
+          border-radius: 4px;
+          width: 100%;
+          justify-content: flex-start;
+          color: #566766;
+          font-size: clamped(14px, 18px);
+          font-weight: 500;
+          line-height: 155.556%;
+
+          &--message {
+            border-radius: 4px;
+            border: 1px solid #72BAB5;
+            background: #309A92;
+            color: #FFFFFF;
+          }
+        }
+
+        &-ico {
+          width: 28px;
+          height: 28px;
+        }
+
+      }
+
+
+    }
+  }
+}
