@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sello</title>
+	<meta name="author" content="Alim Nagoev (https://github.com/nagoev-alim)">
+	<meta name="description" content="Sello - Minimal E-Commerce Creative Website">
+	<meta name="keywords" content="keywords,here">
+	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+	<!-- Section header: -->
+	<header class="header" id="header">
+		<!-- navigation -->
+		<nav class="nav">
+			<div class="nav__wrapper container">
+				<!-- logo -->
+				<a class="logo" aria-label="Sello">
+					<img src="images/logo.png" alt="Sello" class="logo__image">
+				</a>
+				<!-- mobile burger -->
+				<div class="hamburger hamburger--elastic-r">
+					<div class="hamburger-box">
+						<button class="hamburger-inner" aria-label="Mobile burger"></button>
+					</div>
+				</div>
+				<!-- Menu -->
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#header" class="menu__link">Домой</a>
+					</li>
+					<li class="menu__item">
+						<a href="#trending" class="menu__link">Товары</a>
+					</li>
+					<li class="menu__item">
+						<a href="#blog" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#contact" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Section main: -->
+	<main class="main" id="main">
+		<!--
+		Section promo:
+		 -->
+		<section class="promo" id="promo">
+			<div class="promo__inner container vertical">
+				<div class="section-header">
+					<span class="section-header__count">01</span>
+					<!-- head -->
+					<h2 class="head promo__head">ИНТРО</h2>
+				</div>
+				<div class="promo__content">
+					<h2 class="promo__title">Большая распродажа! <br> скидки до 70%</h2>
+					<p class="promo__text">
+						Официальный интернет-магазин одного из ведущих российских брендов для молодых, ярких, активных и
+						успешных девушек, которые хотят найти свой индивидуальный стиль, создать свой идеальный образ.
+					</p>
+					<a href="#" class="btn promo__btn">КУПИТЬ</a>
+				</div>
+				<img src="images/slider.png" alt="SALE OFF! UP TO 70%" class="promo__image">
+			</div>
+		</section>
+		<!--
+		Section trending:
+		 -->
+		<section class="trending pd" id="trending">
+			<div class="trending__inner container vertical">
+				<div class="section-header">
+					<span class="section-header__count">02</span>
+					<!-- head -->
+					<h2 class="head trending__head">В тренде</h2>
+				</div>
+				<div class="trending-btns">
+					<button class="trending-btns__control" aria-label="filter control"
+						data-filter=".t-short">Футболки</button>
+					<button class="trending-btns__control" aria-label="filter control"
+						data-filter=".pants">Брюки</button>
+					<button class="trending-btns__control" aria-label="filter control"
+						data-filter=".shoe">Обувь</button>
+					<button class="trending-btns__control" aria-label="filter control"
+						data-filter=".jacket">Куртки</button>
+					<button class="trending-btns__control" aria-label="filter control"
+						data-filter=".fashion">Платья</button>
+					<button class="btn trending__btn" data-filter="all">Все товары</button>
+				</div>
+				<!-- list -->
+				<ul class="trending-list grid">
+					<!-- item -->
+					<li class="trending-list__item mix trending-item t-short">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-1.jpg" alt="Cuffed Beanie" class="trending-item__image">
+							<span class="trending-item__flag">Футболки</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Cuffed Beanie</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="trending-list__item mix  trending-item jacket">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-2.jpg" alt="Grey Beanie" class="trending-item__image">
+							<span class="trending-item__flag">Шапка</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Grey Beanie</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="trending-list__item mix  trending-item pants">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-3.jpg" alt="Calvin Klein Sweatpants"
+								class="trending-item__image">
+							<span class="trending-item__flag">Брюки</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Calvin Klein Sweatpants</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="trending-list__item mix  trending-item t-short">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-4.jpg" alt="Pink Leather Watch"
+								class="trending-item__image">
+							<span class="trending-item__flag">Футболки</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Pink Leather Watch</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="trending-list__item mix  trending-item pants">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-5.jpg" alt="Cyan Boheme" class="trending-item__image">
+							<span class="trending-item__flag">Брюки</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Cyan Boheme</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="trending-list__item mix  trending-item t-short">
+						<div class="trending-item__header">
+							<img src="images/trending/trending-6.jpg" alt="Woleen Tee" class="trending-item__image">
+							<span class="trending-item__flag">Рубашка</span>
+						</div>
+						<div class="trending-item__body">
+							<h3 class="trending-item__title">Woleen Tee</h3>
+							<p class="trending-item__cost">$36.00</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section stock:
+		 -->
+		<section class="stock" id="stock">
+			<div class="stock__inner container">
+				<div class="stock-column">
+					<div class="stock__wrap">
+						<h3 class="stock__head">
+							<span class="stock__head-small">Летняя распродажа</span>
+							до 70% сейчас
+						</h3>
+						<a href="#" class="btn stock__btn">КУПИТЬ</a>
+					</div>
+				</div>
+				<div class="stock-column">
+					<div class="stock__wrap">
+						<h3 class="stock__head">
+							<span class="stock__head-small">Покупай сейчас</span>
+							Модные футболки
+						</h3>
+						<a href="#" class="btn stock__btn">КУПИТЬ</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--
+		Section featured:
+		 -->
+		<section class="featured pd" id="featured">
+			<div class="featured__inner container vertical">
+				<div class="section-header">
+					<span class="section-header__count">03</span>
+					<!-- head -->
+					<h2 class="head featured__head">Поступление</h2>
+				</div>
+				<!-- list -->
+				<ul class="featured-list grid">
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-1.jpg" alt="Denim Shell Top Ruffle"
+								class="featured-item__image">
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Denim Shell Top Ruffle</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-2.jpg" alt="Cluse La Bohème Rose"
+								class="featured-item__image">
+							<span class="featured-item__flag">-30%</span>
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Cluse La Bohème Rose</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+								<span class="featured-item-price__old">$45.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-3.jpg" alt="Asos Ridley High Waist"
+								class="featured-item__image">
+							<span class="featured-item__flag">SALE</span>
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Asos Ridley High Waist</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-4.jpg" alt="Analogue Resin Strap"
+								class="featured-item__image">
+							<span class="featured-item__flag">FEATURE</span>
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Analogue Resin Strap</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-5.jpg" alt="Ridley High Waist"
+								class="featured-item__image">
+							<span class="featured-item__flag">SALE</span>
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Ridley High Waist</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="featured-list__item featured-item">
+						<div class="featured-item__header">
+							<img src="images/featured/featured-6.jpg" alt="Shell Top with Ruffle Front"
+								class="featured-item__image">
+						</div>
+						<div class="featured-item__body">
+							<h3 class="featured-item__title">Shell Top with Ruffle Front</h3>
+							<p class="featured-item-price">
+								<span class="featured-item-price__new">$36.00</span>
+							</p>
+							<a href="#" class="featured-item__cart">В корзину</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section subscribe:
+		 -->
+		<section class="subscribe container" id="subscribe">
+			<div class="subscribe__inner">
+				<h2 class="subscribe__head"><span class="subscribe__head-bold">Подпишись</span>сейчас</h2>
+				<p class="subscribe__text">
+					И получай новости о скидках и распродажах, а также о новых товарах.
+				</p>
+				<form action="#" class="subscribe-form">
+					<label class="subscribe-form__label" aria-label="Enter the email address">
+						<input type="email" name="mail" class="subscribe-form__input" required
+							placeholder="Введите свою почту">
+					</label>
+					<button type="submit" class="subscribe-form__btn">Подписаться</button>
+				</form>
+			</div>
+		</section>
+		<!--
+		Section blog:
+		 -->
+		<section class="blog pd" id="blog">
+			<div class="blog__inner container vertical">
+				<div class="section-header">
+					<span class="section-header__count">04</span>
+					<!-- head -->
+					<h2 class="head blog__head">Наш Блог</h2>
+				</div>
+				<!-- list -->
+				<ul class="blog-list grid">
+					<!-- item -->
+					<li class="blog-list__item blog-item">
+						<div class="blog-item__header">
+							<img src="images/blog/blog-1.jpg" alt="Мехико: стильный город" class="blog-item__image">
+							<p class="blog-item__date">2 июня 2019</p>
+						</div>
+						<h3 class="blog-item__title">Мехико: стильный город</h3>
+						<p class="blog-item__text">
+							Этим летом Мехико купается в солнечных лучах не только потому, что там хорошая погода, но и
+							потому, что город становится модным туристическим направлением. Влияние мексиканского стиля
+							на подиумы.в этом сезоне более, чем очевидно. В числе поклонников такие бренды, как Molly
+							Goddard и Gucci.
+						</p>
+						<a href="#" class="btn blog-item__btn">Читать</a>
+					</li>
+					<!-- item -->
+					<li class="blog-list__item blog-item">
+						<div class="blog-item__header">
+							<img src="images/blog/blog-2.jpg" alt="Топ-5 кроссовок" class="blog-item__image">
+							<p class="blog-item__date">24 июня 2019</p>
+						</div>
+						<h3 class="blog-item__title">Топ-5 кроссовок</h3>
+						<p class="blog-item__text">
+							Жара в городе не останавливает тебя от размышлений на тему «Хочу новые кроссовки»? Нас тоже!
+							Смотри несколько пар, которые нам понравились в последнее время, и узнай, почему.
+						</p>
+						<a href="#" class="btn blog-item__btn">Читать</a>
+					</li>
+					<!-- item -->
+					<li class="blog-list__item blog-item">
+						<div class="blog-item__header">
+							<img src="images/blog/blog-3.jpg" alt="Бренд сезона: Ray Ban" class="blog-item__image">
+							<p class="blog-item__date">19 июня 2019</p>
+						</div>
+						<h3 class="blog-item__title">Бренд сезона: Ray Ban</h3>
+						<p class="blog-item__text">
+							Естественно, в список вещей необходимых для лета входят не только новые футболки, шорты и
+							кроссовки, но и солнцезащитные очки. Стильные очки вообще способны спасти ситуацию! Поэтому
+							в этом сезоне мы предлагаем инвестировать в классический бренд Ray Ban.
+						</p>
+						<a href="#" class="btn blog-item__btn">Читать</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--
+		Section instagram:
+		 -->
+		<section class="instagram" id="instagram">
+			<!-- list -->
+			<ul class="instagram-list">
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-1.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-2.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-3.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-4.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-5.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-6.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-7.jpg" alt="feed" class="instagram-list__image">
+				</li>
+				<!-- item -->
+				<li class="instagram-list__item">
+					<img src="images/instagram/instagram-8.jpg" alt="feed" class="instagram-list__image">
+				</li>
+			</ul>
+		</section>
+		<!--
+		Section catalog:
+		 -->
+		<section class="catalog" id="catalog">
+			<nav class="catalog-nav container">
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">ЖЕНЩИНЫ</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Платья</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Блузы</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Купальники</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Рубашки</a>
+					</li>
+				</ul>
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">Мужчины</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Аксессуары</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Футболки</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Куртки</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Жакеты</a>
+					</li>
+				</ul>
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">Дети</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Обувь</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Аксессуары</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Брюки</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Рубашки</a>
+					</li>
+				</ul>
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">Игрушки</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Plush</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Teddy</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Cuddly toy</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Kids to</a>
+					</li>
+				</ul>
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">Мебель</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Кровати</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Кресла</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Столы</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Стулья</a>
+					</li>
+				</ul>
+				<!-- list -->
+				<ul class="catalog-list">
+					<li class="catalog-list__head">Украшения</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Золотой рудник</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Прополка</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Birthday Gift</a>
+					</li>
+					<!-- item -->
+					<li class="catalog-list__item">
+						<a href="#" class="catalog-list__link">Nackless</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<!--
+		Section contact:
+		 -->
+		<section class="contact" id="contact">
+			<div class="contact__inner container">
+				<div class="contact-column">
+					<!-- logo -->
+					<a class="logo contact__logo" aria-label="Sello">
+						<img src="images/logo.png" alt="Sello" class="logo__image">
+					</a>
+					<ul class="contact-address">
+						<li class="contact-address__item">
+							<i class="demo-icon icon-location"></i>
+							ул. Ногмова, 27, Нальчик, Кабардино-Балкарская Респ.</li>
+						<li class="contact-address__item">
+							<i class="demo-icon icon-mail-alt"></i>
+							<a href="mailto:contact@company.com" class="contact-address__link">sello@company.com</a>
+						</li>
+						<li class="contact-address__item">
+							<i class="demo-icon icon-phone"></i>
+							<a href="tel:+8(866)277-77-80" class="contact-address__link">8 (866) 277-77-80</a>
+						</li>
+					</ul>
+					<ul class="contact-social">
+						<li class="contact-social__item">
+							<a href="#" class="contact-social__link" aria-label="We in twitter">
+								<i class="demo-icon icon-twitter"></i>
+							</a>
+						</li>
+						<li class="contact-social__item">
+							<a href="#" class="contact-social__link" aria-label="We in facebook">
+								<i class="demo-icon icon-facebook"></i>
+							</a>
+						</li>
+						<li class="contact-social__item">
+							<a href="#" class="contact-social__link" aria-label="We in linkedin">
+								<i class="demo-icon icon-linkedin"></i>
+							</a>
+						</li>
+						<li class="contact-social__item">
+							<a href="#" class="contact-social__link" aria-label="We in instagram">
+								<i class="demo-icon icon-instagram"></i>
+							</a>
+						</li>
+						<li class="contact-social__item">
+							<a href="#" class="contact-social__link" aria-label="We in pinterest">
+								<i class="demo-icon icon-pinterest"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contact-column">
+					<h3 class="contact__head">Информация</h3>
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">О нас</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Контакты</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Условия использования</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Возврат и обмен</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Перевозка и доставка</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Политика конфиденциальности</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contact-column">
+					<h3 class="contact__head">Быстрые ссылки</h3>
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Расположение</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Аккаунт</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Отследивание товара</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Гид по размерам</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">FAQs</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contact-column">
+					<h3 class="contact__head">Оплата</h3>
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Аккаунт</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Бесплатная доставка</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Поддержка 24/7</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">30 дней возврата</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">100% защита от мошенничества</a>
+						</li>
+						<li class="contact-list__item">
+							<a href="#" class="contact-list__link">Поддержка всех видов карт</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Section footer: -->
+	<footer class="footer" id="footer">
+		<p class="footer__copy container">Copyright © 2019 Sello все права защищены. Автор - Алим Нагоев</p>
+	</footer>
+
+
+	<script src="scripts/scrollTo.js"></script>
+	<script src="scripts/mixitup.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
