@@ -1,0 +1,60 @@
+@import "../../../scss/mixins/fluid-types";
+
+.footer {
+  background-color: #DEDEDE;
+  padding-top: #{fluid(40px, 54px)};
+  padding-bottom: #{fluid(40px, 54px)};
+
+  :global {
+
+    .footer {
+      &__nav {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        @media (min-width: 768px) {
+          text-align: left;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &__logo {
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+          margin-right: 29px;
+        }
+      }
+
+      &__about {
+        margin-bottom: 30px;
+        max-width: 238px;
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+          margin-right: auto;
+        }
+      }
+
+      &__cta {
+        display: grid;
+        gap: 3px;
+        @media (min-width: 768px) {
+          justify-items: flex-end;
+        }
+
+        &-number {
+          font-weight: 600;
+
+        }
+
+        &-trigger {
+          background: transparent;
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+
+}

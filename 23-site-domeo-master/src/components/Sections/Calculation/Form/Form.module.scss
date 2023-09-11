@@ -1,0 +1,64 @@
+@import "../../../../scss/mixins/fluid-types";
+
+.calculationForm {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: #{fluid(40px, 90px)};
+  box-shadow: 0px 0.44276103377342224px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 1.064016342163086px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 2.003448247909546px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 3.5738093852996826px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 6.684417724609375px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 16px 80px 0px rgba(0, 0, 0, 0.07);
+  padding: 30px 2px 40px;
+  @media (min-width: 768px) {
+    padding: 60px 58px;
+  }
+
+  :global {
+    .calculation-form {
+      &__top {
+        text-align: center;
+      }
+
+      &__title {
+
+      }
+
+      &__text {
+        margin-bottom: #{fluid(30px, 60px)};
+      }
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: #{fluid(10px, 40px)};
+        margin-bottom: #{fluid(40px, 60px)};
+        gap: 10px;
+        @media (min-width: 576px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(4, 1fr);
+          &--1, &--2 {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        &-item {
+        }
+
+        &-label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        &-text {
+          font-weight: 600;
+          text-align: left;
+        }
+      }
+
+      &__btns {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import "../../../scss/mixins/fluid-types";
+
+.steps {
+  background-color: #FAFAFA;
+  padding-bottom: #{fluid(40px, 90px)};
+
+  :global {
+
+    .steps {
+      &__title {
+        text-align: center;
+        margin-bottom: #{fluid(15px, 20px)};
+      }
+
+      &__text {
+        text-align: center;
+        margin-bottom: #{fluid(100px, 130px)};
+      }
+
+      &__list {
+        display: grid;
+        row-gap: 100px;
+        margin-bottom: #{fluid(30px, 90px)};
+        @media (min-width: 768px) {
+          column-gap: 40px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        &-item {
+          position: relative;
+          text-align: center;
+          display: grid;
+          place-items: center;
+          gap: 30px;
+          padding: 95px 34px 30px;
+          border-radius: 10px;
+          background-color: #fff;
+
+          &::before {
+            position: absolute;
+            content: attr(data-number);
+            top: -60%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background-color: #FFDB48;
+            font-size: 102px;
+            font-weight: 600;
+            line-height: 1;
+            color: #fff;
+          }
+
+          &--last {
+            border: 1px solid #FFDB48;
+            box-shadow: 0px 0.44276103377342224px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 1.064016342163086px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 2.003448247909546px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 3.5738093852996826px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 6.684417724609375px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 16px 80px 0px rgba(0, 0, 0, 0.07);
+          }
+        }
+
+        &-text {
+          font-weight: 600;
+          color: #000;
+        }
+      }
+
+      &__form-title {
+        text-align: center;
+        margin-bottom: #{fluid(10px, 15px)};
+      }
+
+      &__form-text {
+        text-align: center;
+        margin-bottom: #{fluid(30px, 60px)};
+      }
+    }
+
+  }
+}

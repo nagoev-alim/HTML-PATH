@@ -1,0 +1,30 @@
+@import "../../../scss/mixins/fluid-types";
+
+.notsearch {
+  background: #FFF;
+  box-shadow: 0px 0.44px 2.21px 0px rgba(0, 0, 0, 0.02), 0px 1.06px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 2px 10.01px 0px rgba(0, 0, 0, 0.04), 0px 3.57px 17.86px 0px rgba(0, 0, 0, 0.04), 0px 6.68px 33.4px 0px rgba(0, 0, 0, 0.05), 0px 16px 80px 0px rgba(0, 0, 0, 0.07);
+  padding-top: #{fluid(40px, 60px)};
+  padding-bottom: #{fluid(40px, 60px)};
+  text-align: center;
+
+  :global {
+
+    .notsearch {
+      &__title {
+        margin-bottom: #{fluid(15px, 20px)};
+        max-width: 840px;
+        margin-inline: auto;
+
+        span {
+          color: #0260E8;
+        }
+      }
+
+      &__text {
+        font-size: #{fluid(16px, 20px)};
+      }
+    }
+
+  }
+
+}

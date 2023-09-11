@@ -1,0 +1,63 @@
+@import "../../../scss/mixins/fluid-types";
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  :global {
+
+    .header {
+      &__nav {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding-top: #{fluid(20px, 30px)};
+        @media (min-width: 768px) {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          text-align: left;
+        }
+      }
+
+      &__logo {
+        margin-bottom: 13px;
+        @media (min-width: 768px) {
+          margin: 0;
+        }
+      }
+
+      &__about {
+        margin-bottom: 10px;
+        font-size: 14px;
+        @media (min-width: 768px) {
+          max-width: 238px;
+          margin: 0 133px 0 0;
+        }
+      }
+
+      &__cta {
+        display: grid;
+
+        &-number {
+          font-weight: 600;
+        }
+
+        &-trigger {
+          display: none;
+          font-size: 14px;
+          text-decoration-line: underline;
+          background: transparent;
+          border: 0;
+          @media (min-width: 768px) {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+
+}

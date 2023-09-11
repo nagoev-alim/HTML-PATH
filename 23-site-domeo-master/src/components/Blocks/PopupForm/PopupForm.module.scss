@@ -1,0 +1,40 @@
+@import "../../../scss/mixins/fluid-types";
+
+.popupForm {
+  padding: #{fluid(30px, 60px)} #{fluid(10px, 83px)};
+  box-shadow: 0px 0.44276103377342224px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 1.064016342163086px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 2.003448247909546px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 3.5738093852996826px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 6.684417724609375px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 16px 80px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background: #FFF;
+  max-width: 560px;
+  margin-inline: auto;
+
+  :global {
+    .popup-form {
+      &__top {
+        display: grid;
+        text-align: center;
+        place-items: center;
+        margin-bottom: #{fluid(30px, 51px)};
+      }
+
+      &__form {
+        display: grid;
+        gap: 20px;
+      }
+
+      &__footer {
+        display: grid;
+        text-align: center;
+        gap: 10px;
+
+        p {
+          font-size: 14px;
+        }
+
+        a {
+          color: #0260E8;
+        }
+      }
+    }
+  }
+}

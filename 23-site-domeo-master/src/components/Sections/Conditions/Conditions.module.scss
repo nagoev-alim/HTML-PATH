@@ -1,0 +1,92 @@
+@import "../../../scss/mixins/fluid-types";
+
+.conditions {
+  background-color: #fff;
+  padding-top: #{fluid(80px, 90px)};
+  padding-bottom: #{fluid(175px, 83px)};
+
+  :global {
+
+    .conditions {
+      &__container {
+        position: relative;
+      }
+
+      &__img {
+        position: absolute;
+        left: 0;
+        top: -80px;
+        width: #{fluid(170px, 438px)};
+        @media (min-width: 768px) {
+          left: -130px;
+        }
+      }
+
+      &__title {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: #{fluid(15px, 20px)};
+        max-width: 550px;
+        margin-inline: auto;
+      }
+
+      &__text {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: #{fluid(30px, 60px)};
+      }
+
+      &__list {
+        display: grid;
+        row-gap: #{fluid(20px, 30px)};
+        column-gap: 40px;
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          position: relative;
+          z-index: 2;
+        }
+
+        &-item {
+          padding-top: 70px;
+          padding-left: 80px;
+          padding-bottom: 55px;
+          border-radius: 10px;
+          background: #FFF;
+          box-shadow: 0px 0.44276103377342224px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 1.064016342163086px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 2.003448247909546px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 3.5738093852996826px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 6.684417724609375px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 16px 80px 0px rgba(0, 0, 0, 0.07);
+          position: relative;
+
+          &::before {
+            content: attr(data-number);
+            position: absolute;
+            color: rgba(255, 219, 72, 0.25);
+            font-size: 102px;
+            font-weight: 600;
+            left: 20px;
+            top: 30px;
+            line-height: 1;
+          }
+
+        }
+      }
+
+      &__message {
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px);
+        margin-inline: auto;
+        max-width: 1040px;
+        @media (min-width: 768px) {
+          padding-top: 83px;
+          padding-bottom: 50px;
+          bottom: -14%;
+        }
+      }
+    }
+
+  }
+
+}

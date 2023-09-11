@@ -1,0 +1,262 @@
+@import "./mixins/fluid-types";
+
+/* 🌴 Settings */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* 🌴 Variables */
+
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+}
+
+/* 🌴 Base */
+
+html, body {
+  font-family: 'Raleway', system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: #272727;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root,
+#app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.btn, .button, button {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color .3s ease-in-out;
+  border: 0;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-inline: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.title {
+  font-size: #{fluid(26px, 38px)};
+  font-weight: 700;
+  line-height: 120%; /* 31.2px */
+  span {
+    color: #0260E8;
+  }
+}
+
+.text {
+  line-height: 155%; /* 31px */
+  font-size: #{fluid(16px, 20px)};
+}
+
+.subtitle {
+}
+
+.btn {
+  border-radius: 100px;
+  padding: 25px #{fluid(30px, 50px)};
+  gap: 10px;
+  font-size: #{fluid(14px, 18px)};
+  font-weight: 600;
+    border: 1px solid transparent;
+
+  &--primary {
+    color: #fff;
+    background-color: #41B619;
+
+    &:hover,
+    &:focus {
+      background-color: #269001;
+    }
+  }
+
+  &--secondary {
+    background-color: #fff;
+    border-color: #41B619;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #41B619;
+  background: #FFF;
+  padding: 20px 22px;
+  outline: none;
+  font-size: #{fluid(16px, 18px)};
+
+  &:focus,
+  &:hover {
+    border-color: #269001;
+  }
+
+  &::placeholder {
+    color: #DEDEDE;
+    font-size: 16px;
+    line-height: 100%; /* 16px */
+  }
+}
+
+.label {
+  color: #000;
+  font-size: #{fluid(16px, 18px)};
+  line-height: 155%; /* 24.8px */
+  display: inline-block;
+  margin-bottom: #{fluid(18px, 15px)};
+}
+
+.message {
+  display: grid;
+  place-items: center;
+  background-color: #FFDB48;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: #{fluid(16px, 20px)};
+  line-height: #{fluid(24px, 31px)};
+  @media (min-width: 768px) {
+    display: flex;
+    text-align: left;
+    padding: 39px 33px;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &__text {
+  }
+}
+
+.form-1 {
+  display: grid;
+  max-width: 500px;
+  margin-inline: auto;
+  gap: #{fluid(30px, 45px)};
+  @media (min-width: 992px) {
+    max-width: 100%;
+    grid-template-columns: 300px 300px auto;
+  }
+
+  &__footer {
+    display: grid;
+    gap: 10px;
+    @media (min-width: 992px) {
+      padding-top: 40px;
+    }
+
+    a {
+      color: #0260E8;
+    }
+
+    &-text {
+      font-size: #{fluid(12px, 14px)};
+    }
+  }
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #DEDEDE;
+  display: inline-block;
+  transition: border .3s ease-in-out;
+  flex-shrink: 0;
+}
+
+label:hover .checkbox {
+  border-color: #FFDB48;
+}
+
+[type="checkbox"]:checked + .checkbox,
+[type="radio"]:checked + .checkbox {
+  border-width: 5px;
+  border-color: #FFDB48;
+}

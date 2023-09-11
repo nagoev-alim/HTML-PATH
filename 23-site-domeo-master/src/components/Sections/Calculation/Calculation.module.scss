@@ -1,0 +1,25 @@
+@import "../../../scss/mixins/fluid-types";
+
+.calculation {
+  background-color: #FAFAFA;
+  padding-bottom: #{fluid(40px, 90px)};
+  padding-top: #{fluid(170px, 180px)};
+  margin-top: -100px;
+
+  :global {
+
+    .calculation {
+      &__title {
+        text-align: center;
+        margin-bottom: #{fluid(15px, 20px)};
+      }
+
+      &__text {
+        text-align: center;
+        margin-bottom: #{fluid(30px, 60px)};
+      }
+    }
+
+  }
+
+}
