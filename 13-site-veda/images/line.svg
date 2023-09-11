@@ -1,0 +1,23 @@
+<svg class="line-header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1.66">
+	<defs>
+	  <linearGradient id="a" y1="-.04" x2="237.12" y2="-.04" gradientTransform="matrix(0 -1 -20.98 0 117.75 119.39)" gradientUnits="userSpaceOnUse">
+		<stop offset="0" stop-color="#3176ff"/>
+		<stop offset=".33" stop-color="#3074fd"/>
+		<stop offset=".5" stop-color="#2d6cf5"/>
+		<stop offset=".63" stop-color="#2860e8"/>
+		<stop offset=".75" stop-color="#214dd5"/>
+		<stop offset=".85" stop-color="#1736bd"/>
+		<stop offset=".94" stop-color="#0c199f"/>
+		<stop offset="1" stop-color="#020085"/>
+	  </linearGradient>
+	  <linearGradient id="b" x1="199.92" y1="-.04" x2="731.96" y2="-.04" gradientTransform="matrix(0 -1 -20.98 0 465.12 466.77)" xlink:href="#a"/>
+	  <linearGradient id="c" x1="715.75" y1="-.04" x2="1200" y2="-.04" gradientTransform="matrix(0 -1 -20.98 0 957.06 958.7)" xlink:href="#a"/>
+	</defs>
+	<g data-name="Слой 2">
+	  <g data-name="1200">
+		<path transform="rotate(90 118.56 .83)" fill="url(#a)" d="M117.73-117.73h1.66v237.12h-1.66z"/>
+		<path transform="rotate(90 465.94 .83)" fill="url(#b)" d="M465.11-265.19h1.66v532.04h-1.66z"/>
+		<path transform="rotate(90 957.875 .825)" fill="url(#c)" d="M957.05-241.3h1.66v484.25h-1.66z"/>
+	  </g>
+	</g>
+  </svg>

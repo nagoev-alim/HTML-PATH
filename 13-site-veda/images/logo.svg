@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.57 37.64">
+	<defs>
+		<style>
+			.cls-1 {
+				fill: none;
+				clip-rule: evenodd
+			}
+
+			.cls-6 {
+				fill: #4275fa
+			}
+		</style>
+		<clipPath id="clip-path">
+			<path class="cls-1" d="M.01 12.97h26.31l1.31-2.27-2.28-1.31H.01v3.58z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_13" x1=".01" y1="11.18" x2="27.63" y2="11.18"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4275fa" />
+			<stop offset=".66" stop-color="#4275fa" />
+			<stop offset=".71" stop-color="#3d6cf0" />
+			<stop offset=".79" stop-color="#2f53d6" />
+			<stop offset=".9" stop-color="#182aab" />
+			<stop offset="1" stop-color="#00007f" />
+		</linearGradient>
+		<clipPath id="clip-path-2">
+			<path class="cls-1" d="M16.26 2.07h-3.59L0 9.39h7.17l9.09-5.25V2.07z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_2" x1="15.17" y1="1.89" x2=".47" y2="9.9"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4275fa" />
+			<stop offset=".47" stop-color="#4275fa" />
+			<stop offset=".69" stop-color="#2847ca" />
+			<stop offset="1" stop-color="#00007f" />
+		</linearGradient>
+		<clipPath id="clip-path-3">
+			<path class="cls-1" d="M32.52 28.25V9.39l-3.59 6.22v10.57l1.54.78 2.05 1.29z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_3" x1="30.73" y1="28.25" x2="30.73" y2="9.4"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4275fa" />
+			<stop offset=".51" stop-color="#4275fa" />
+			<stop offset=".74" stop-color="#1f38ba" />
+			<stop offset=".91" stop-color="#090f8f" />
+			<stop offset="1" stop-color="#00007f" />
+		</linearGradient>
+		<clipPath id="clip-path-4">
+			<path class="cls-1" d="M28.39 9.39L16.26 30.4l1.34 2.33 2.19-1.27L32.52 9.39h-4.13z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_4" x1="14.24" y1="26.91" x2="35.54" y2="14.62"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#00007f" />
+			<stop offset=".12" stop-color="#182aab" />
+			<stop offset=".25" stop-color="#2f53d6" />
+			<stop offset=".35" stop-color="#3d6cf0" />
+			<stop offset=".41" stop-color="#4275fa" />
+			<stop offset="1" stop-color="#4275fa" />
+		</linearGradient>
+		<clipPath id="clip-path-5">
+			<path class="cls-1" d="M.01 28.25l16.25 9.39-3.54-6.19-10.92-6.3-1.79 3.1z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_5" x1=".73" y1="27.18" x2="16.37" y2="36.08"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#4275fa" />
+			<stop offset=".58" stop-color="#4275fa" />
+			<stop offset=".66" stop-color="#355ee1" />
+			<stop offset="1" stop-color="#00007f" />
+		</linearGradient>
+		<clipPath id="clip-path-6">
+			<path class="cls-1" d="M3.59 12.97v2.66l12.67 22.01 3.13-1.81L6.2 12.97H3.59z" />
+		</clipPath>
+		<linearGradient id="Безымянный_градиент_6" x1=".78" y1="16.32" x2="21.31" y2="33.55"
+			gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#00007f" />
+			<stop offset=".11" stop-color="#182aab" />
+			<stop offset=".24" stop-color="#2f53d6" />
+			<stop offset=".34" stop-color="#3d6cf0" />
+			<stop offset=".4" stop-color="#4275fa" />
+			<stop offset="1" stop-color="#4275fa" />
+		</linearGradient>
+	</defs>
+	<g id="Слой_2" data-name="Слой 2">
+		<g id="_1200" data-name="1200">
+			<g clip-path="url(#clip-path)">
+				<path fill="url(#Безымянный_градиент_13)" d="M.01 9.39h27.62v3.59H.01z" />
+			</g>
+			<g clip-path="url(#clip-path-2)">
+				<path fill="url(#Безымянный_градиент_2)" d="M0 2.07h16.26v7.32H0z" />
+			</g>
+			<path class="cls-6"
+				d="M16.26 0l-3.59 2.07 14.95 8.63 2.13-.06 2.76-1.25L16.26 0zM.01 11.52v16.73l3.58-2.07V11.52H.01z" />
+			<g clip-path="url(#clip-path-3)">
+				<path fill="url(#Безымянный_градиент_3)" d="M28.94 9.4h3.59v18.86h-3.59z" />
+			</g>
+			<g clip-path="url(#clip-path-4)">
+				<path fill="url(#Безымянный_градиент_4)" d="M16.26 9.39h16.26v23.34H16.26z" />
+			</g>
+			<path class="cls-6" d="M30.73 25.15L17.6 32.73l-1.34 2.8 3.13.3 13.13-7.58-1.79-3.1z" />
+			<g clip-path="url(#clip-path-5)">
+				<path fill="url(#Безымянный_градиент_5)" d="M.01 25.15h16.26v12.49H.01z" />
+			</g>
+			<g clip-path="url(#clip-path-6)">
+				<path fill="url(#Безымянный_градиент_6)" d="M3.59 12.97h15.8v24.67H3.59z" />
+			</g>
+			<path
+				d="M58.88 10.96h3.85l-8.21 15.56h-2.97l-8.21-15.56h3.85l5.85 11.22 5.84-11.22zm66 9.49h5.55l-2.78-5.14zm7.19 3h-8.83l-1.65 3.05h-3.85l8.43-15.5h3l8.43 15.55h-3.85zm-26.87-.06h-6.12v-3.22h3v-3h-3v-3h6.12c3 0 4 2.23 4 4.64s-1 4.65-4 4.65m0-12.42h-9.73v6.18h-3v3h3v6.35h9.73c5.24 0 7.76-3.4 7.76-7.78S110.44 11 105.2 11zM73.92 23.39v-3.22h8.61v-3.02h-8.61V14.1h11.53v-3.14H70.31v6.19h-3.03v3.02h3.03v6.35h15.25v-3.13H73.92z"
+				fill="#fff" />
+		</g>
+	</g>
+</svg>
