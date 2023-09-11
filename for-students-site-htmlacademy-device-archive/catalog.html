@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--  1.DOCUMENT FAVICONS 	
+	====================-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!--  3.DOCUMENT LIBS
+	====================-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<!--  4.DOCUMENT CUSTOM STYLES
+	====================-->
+	<link rel="stylesheet" href="css/common.css">
+	<!-- 5.DOCUMENT TITLE
+==================== -->
+	<title>DEVICE - CATALOG</title>
+</head>
+
+<!-- 6.DOCUMENT BODY START
+==================== -->
+
+<body class="catalog_body">
+	<header class="header" id="header">
+		<div class="header_top">
+			<div class="cnt">
+				<a href="index.html" class="header_logo">DEVICE</a>
+				<div class="header_row">
+					<div class="header_search">
+						<form action="#">
+							<input type="search" name="" id="" placeholder="Поиск по сайту">
+							<button class="search_button">Найти</button>
+						</form>
+					</div>
+					<!-- end #header_search -->
+					<div class="user_list">
+						<ul class="sign_list">
+							<a href="#">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								  width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+									<path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+							 C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"
+									/>
+								</svg>Валентин Петухов</a>
+							<a href="#" class="log_out">Выйти</a>
+						</ul>
+						<ul class="shop_list">
+							<a href="#">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								  width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+									<rect x="8" y="2" width="1.984" height="8" />
+									<rect y="3" width="1.984" height="7" />
+									<rect x="4" width="2" height="10" />
+								</svg>Сравнить</a>
+							<a href="#">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								  width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+									<g>
+										<path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+								 c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+								 c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+								 c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" />
+										<path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+								 c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+								 C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z" />
+									</g>
+								</svg>Корзина</a>
+						</ul>
+					</div>
+					<!-- end #user_list -->
+				</div>
+			</div>
+			<!-- end #cnt -->
+		</div>
+		<!-- end #header_top -->
+		<div class="header_bottom">
+			<div class="cnt">
+				<div class="header_catalog_list">
+					<input type="checkbox" name="" id="show_list">
+					<label for="show_list">Каталог товаров</label>
+					<div class="catalog_submenu">
+						<ul class="list_menu">
+							<a href="catalog.html">Виртуальная реальность</a>
+							<a href="catalog.html">Моноподы для селфи</a>
+							<a href="catalog.html">Экшн-камеры</a>
+						</ul>
+						<ul class="list_menu">
+							<a href="catalog.html">Фитнес-браслеты</a>
+							<a href="catalog.html">Умные часы</a>
+						</ul>
+						<ul class="list_menu">
+							<a href="catalog.html">Квадрокоптеры</a>
+						</ul>
+					</div>
+					<!-- end #catalog_submenu -->
+				</div>
+				<!-- end #header_catalog_list -->
+				<div class="header_menu">
+					<a href="index.html">Доставка</a>
+					<a href="index.html">Гарантия</a>
+					<a href="index.html">Контакты</a>
+				</div>
+				<!-- end #header_menu -->
+			</div>
+			<!-- end #cnt -->
+		</div>
+		<!-- end #header_bottom -->
+	</header>
+	<!-- end #header -->
+
+	<div class="header_mobile">
+		<a href="#" class="header_logo">DEVICE</a>
+		<div class="mobile_bar">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="mobile_menu">
+			<a href="catalog.html">Каталог товаров</a>
+			<a href="#services">Доставка</a>
+			<a href="#services">Гарантия</a>
+			<a href="#about">Контакты</a>
+		</ul>
+	</div>
+	<!-- end #header_mobile -->
+	
+	<section class="catalog_head" id="catalog_head">
+		<div class="cnt">
+			<h1>
+				Моноподы для селфи
+			</h1>
+		</div>
+		<!-- end #cnt -->
+	</section>
+	<!-- end #catalog_head -->
+
+	<section class="breadcrumbs" id="breadcrumbs">
+		<div class="cnt">
+			<ul>
+				<a href="index.html">Главная </a>
+				<a href="catalog.html">Каталог товаров</a>
+				<a href="catalog.html">Моноподы для селфи</a>
+			</ul>
+		</div>
+		<!-- end #cnt -->
+	</section>
+	<!-- end #breadcrumbs -->
+
+
+	<section class="catalog_section" id="catalog_section">
+		<div class="catalog_row catalog_titles">
+			<div class="cnt">
+				<div class="filters_title">
+					Фильтр:
+				</div>
+				<!-- end #filters_title -->
+				<div class="sorts_title">
+					<span>Сортировка:</span>
+					<ul class="sort_types">
+						<a href="#" class="current">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По популярности</a>
+					</ul>
+					<ul class="sort_position">
+						<a href="#" class="triangle_up"></a>
+						<a href="#" class="triangle_down"></a>
+					</ul>
+				</div>
+				<!-- end #cnt -->
+			</div>
+			<!-- end #sorts_title -->
+		</div>
+		<!-- end #catalog_titles -->
+		<div class="catalog_content">
+			<div class="cnt">
+				<div class="catalog_filter">
+					<div class="catalog_filter_title">
+						Фильтр:
+					</div>
+					<!-- end #catalog_filter_title -->
+					<form action="#">
+						<fieldset>
+							<legend>Стоимость</legend>
+							<div class="range_in">
+								<div class="slider_in">
+									<div id="slider-range"></div>
+								</div>
+								<div class="range_row">
+									<div class="range_item">
+										<label for="amount_min">от</label>
+										<input type="text" id="amount_min">
+									</div>
+									<div class="range_item">
+										<label for="amount_max">до</label>
+										<input type="text" id="amount_max">
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Цвет</legend>
+							<div class="field">
+								<input type="checkbox" name="" id="black" checked>
+								<label for="black">Черный</label>
+							</div>
+							<div class="field">
+								<input type="checkbox" name="" id="white">
+								<label for="white">Белый</label>
+							</div>
+							<div class="field">
+								<input type="checkbox" name="" id="blue" checked>
+								<label for="blue">Синий</label>
+							</div>
+							<div class="field">
+								<input type="checkbox" name="" id="red" checked>
+								<label for="red">Красный</label>
+							</div>
+							<div class="field">
+								<input type="checkbox" name="" id="pure">
+								<label for="pure">Розовый</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Bluetooth</legend>
+							<div class="field">
+								<input type="radio" name="bluetooth" id="yes" checked>
+								<label for="yes">Есть</label>
+							</div>
+							<div class="field">
+								<input type="radio" name="bluetooth" id="no">
+								<label for="no">Нет</label>
+							</div>
+							<button class="button">Показать</button>
+						</fieldset>
+					</form>
+				</div>
+				<!-- end #catalog_filter -->
+				<div class="catalog_inner">
+					<div class="catalog_inner_sorts_title sorts_title">
+						<span>Сортировка:</span>
+						<ul class="sort_types">
+							<a href="#" class="current">По цене</a>
+							<a href="#">По типу</a>
+							<a href="#">По популярности</a>
+						</ul>
+						<ul class="sort_position">
+							<a href="#" class="triangle_up"></a>
+							<a href="#" class="triangle_down"></a>
+						</ul>
+					</div>
+					<div class="catalog_list">
+						<div class="catalog_item">
+							<div class="item_image">
+								<img src="images/item-1.png" alt="">
+								<div class="overlay">
+									<div class="overlay_body">
+										<a href="#" class="button">В корзину</a>
+										<a href="#">Добавить к сравнению</a>
+									</div>
+								</div>
+							</div>
+							<!-- end #item_image -->
+							<div class="item_desc">
+								<span class="name">Любительская селфи-палка</span>
+								<span class="cost">500 руб.</span>
+							</div>
+							<!-- end #item_desc -->
+						</div>
+						<!-- end #catalog_item -->
+						<div class="catalog_item">
+							<div class="item_image">
+								<img src="images/item-2.png" alt="">
+								<div class="overlay">
+									<div class="overlay_body">
+										<a href="#" class="button">В корзину</a>
+										<a href="#">Добавить к сравнению</a>
+									</div>
+								</div>
+							</div>
+							<!-- end #item_image -->
+							<div class="item_desc">
+								<span class="name">Профессиональная
+									<br> селфи-палка </span>
+								<span class="cost">1500 руб.</span>
+							</div>
+							<!-- end #item_desc -->
+						</div>
+						<!-- end #catalog_item -->
+						<div class="catalog_item">
+							<div class="item_image">
+								<img src="images/item-3.png" alt="">
+								<div class="overlay">
+									<div class="overlay_body">
+										<a href="#" class="button">В корзину</a>
+										<a href="#">Добавить к сравнению</a>
+									</div>
+								</div>
+							</div>
+							<!-- end #item_image -->
+							<div class="item_desc">
+								<span class="name">Непотопляемая селфи-палка</span>
+								<span class="cost">2500 руб.</span>
+							</div>
+							<!-- end #item_desc -->
+						</div>
+						<!-- end #catalog_item -->
+						<div class="catalog_item">
+							<div class="item_image">
+								<img src="images/item-4.png" alt="">
+								<div class="overlay">
+									<div class="overlay_body">
+										<a href="#" class="button">В корзину</a>
+										<a href="#">Добавить к сравнению</a>
+									</div>
+								</div>
+							</div>
+							<!-- end #item_image -->
+							<div class="item_desc">
+								<span class="name">Селфи-палка «Следуй за
+									<br> мной»</span>
+								<span class="cost">4900 руб.</span>
+							</div>
+							<!-- end #item_desc -->
+						</div>
+						<!-- end #catalog_item -->
+					</div>
+					<!-- end #catalog_list -->
+					<div class="pagination">
+						<a href="#" class="pagination_text">Назад</a>
+						<ul>
+							<a href="#" class="current">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</ul>
+						<a href="#" class="pagination_text">Вперед</a>
+					</div>
+					<!-- end #pagination -->
+				</div>
+				<!-- end #catalog_inner -->
+			</div>
+			<!-- end #cnt -->
+		</div>
+		<!-- end #catalog_content -->
+	</section>
+	<!-- end #catalog_section -->
+
+	<footer class="footer" id="footer">
+		<div class="cnt">
+			<div class="footer_item">
+				<a href="index.html" class="header_logo footer_logo">DEVICE</a>
+				<div class="user_list footer_user_list">
+					<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+							<path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+								 C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"
+							/>
+						</svg>Валентин Петухов</a>
+					<a href="#" class="log_out">Выйти</a>
+					<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+							<rect x="8" y="2" width="1.984" height="8" />
+							<rect y="3" width="1.984" height="7" />
+							<rect x="4" width="2" height="10" />
+						</svg>Сравнить</a>
+					<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+							<g>
+								<path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+											 c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+											 c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+											 c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z" />
+								<path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+											 c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+											 C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"
+								/>
+							</g>
+						</svg>Корзина</a>
+				</div>
+				<!-- end #user_list -->
+			</div>
+			<!-- end #footer_item -->
+			<div class="footer_item">
+				<p>г. Москва, ул. Строителей, 15</p>
+				<ul class="footer_menu">
+					<a href="index.html">Доставка</a>
+					<a href="index.html">Гарантия</a>
+					<a href="index.html">Контакты</a>
+				</ul>
+				<a href="tel: +7 (495) 495-95-95" class="footer_phone">Тел.: +7 (495) 495-95-95</a>
+			</div>
+			<!-- end #footer_item -->
+			<div class="footer_item">
+				<span class="line"></span>
+				<ul class="footer_social">
+					<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+							<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
+							 v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"
+							/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						  width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+							<g>
+								<path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+								 h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z" />
+								<path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+								 c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z" />
+								<rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039" />
+								<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+									M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+								 h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z" />
+							</g>
+						</svg>
+					</a>
+					<a href="#">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+						  height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+							<g id="Layer_1">
+							</g>
+							<g id="Layer_2">
+								<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+									M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
+								 c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
+								 c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
+								 c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
+								 c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
+								 c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"
+								/>
+							</g>
+						</svg>
+					</a>
+				</ul>
+
+				<a href="#" class="htmlacademy">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					  width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+						<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"
+						/>
+					</svg>
+				</a>
+			</div>
+			<!-- end #footer_item -->
+		</div>
+		<!-- end cnt-->
+	</footer>
+	<!-- end footer-->
+
+	<!-- DOCUMENT SCRIPTS 
+==================== -->
+	<script src="libs/vendor/libs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- DOCUMENT SCRIPTS CUSTOM
+==================== -->
+	<script src="libs/common.js"></script>
+</body>
+<!-- DOCUMENT BODY END
+==================== -->
+
+</html>
